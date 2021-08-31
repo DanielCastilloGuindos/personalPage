@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Daniel Castillo Guindos</title>
+    <link rel="shortcut icon" href="/media/icon/favicon.ico" type="image/x-icon">
+
+	<!-- TAILWIND -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
+		integrity="sha512-y6ZMKFUQrn+UUEVoqYe8ApScqbjuhjqzTuwUMEGMDuhS2niI8KA3vhH2LenreqJXQS+iIXVTRL2iaNfJbDNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- TODO:Eliminar esto y sustituir por documentos SVG -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- TODO: Descargar la fuente y enlanzarla -->
+	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+	<!-- Normalize style -->
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+	</style>
+
+	<!-- Scroll bar modern. -->
+	<style>
+		::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+			background-color: #F5F5F5;
+		}
+
+		::-webkit-scrollbar {
+			width: 8px;
+			background-color: #F5F5F5;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: rgba(31, 41, 55, 1);
+			background-image: -webkit-linear-gradient(45deg,
+					rgba(255, 255, 255, .2) 25%,
+					transparent 25%,
+					transparent 50%,
+					rgba(255, 255, 255, .2) 50%,
+					rgba(255, 255, 255, .2) 75%,
+					transparent 75%,
+					transparent)
+		}
+	</style>
+
+	<!-- Handle Scroll to href -->
+	<style>
+		html {
+			scroll-behavior:  smooth;
+		}
+	</style>
+
+	<!-- Hamburger menu -->
+	<style>
+		#hamburger {
+			position: relative;
+			width: 38px;
+			height: 38px;
+
+			cursor: pointer;
+		}
+
+		#hamburger:hover {
+		}
+
+		#hamburger > span {
+			--tw-translate-x: -50%;
+			--tw-translate-y: -50%;
+			--tw-rotate: 0deg;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			width: 75%;
+			height: 2px;
+
+			background: #000;
+
+			transform: translateX(var(--tw-translate-x)) rotate(--tw-rotate);
+			transition: all .4s ease;
+		}
+
+		#hamburger > span:nth-child(1) {
+			top: 25%;
+		}
+
+		#hamburger > span:nth-child(3) {
+			top: 75%;
+		}
+
+		#hamburger.open {
+			transition-delay: .8s;
+			transform: rotate(45deg);
+		}
+
+		#hamburger.open > span:nth-child(2)  {
+			width: 0%;
+		}
+
+		#hamburger.open > span:nth-child(1),
+		#hamburger.open > span:nth-child(3)  {
+			transition-delay: .4s;
+		}
+
+		#hamburger.open > span:nth-child(1),
+		#hamburger.open > span:nth-child(3) {
+			top: 50%;
+		}
+
+		#hamburger.open > span:nth-child(1) {
+			--tw-rotate: -90deg;
+		}
+
+		#hamburger.open > span:nth-child(3) {
+			--tw-rotate: 90deg;
+		}
+	</style>
+
+	<!-- Contact section -->
+	<style>
+		div[role='info-box']:hover div[role="logo-content"]  {
+			--tw-scale-x: 0;
+			--tw-scale-y: 0;
+			animation-delay: .5s;
+		}
+		div[role="info-content"] {
+			--tw-translate-y: calc(100% - 5px);
+		}
+		div[role='info-box']:hover div[role="info-content"]  {
+			--tw-translate-y: -100;
+		}
+	</style>
+
+	<!-- My TailwindCSS animations -->
+	<style>
+	</style>
+
+	<!-- ZEPTO -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"
+		integrity="sha512-BrvVYNhKh6yST24E5DY/LopLO5d+8KYmIXyrpBIJ2PK+CyyJw/cLSG/BfJomWLC1IblNrmiJWGlrGueKLd/Ekw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body class="antialiased">
+
+	<!-- PLANTILLA DE CABECERA -->
+    {{>header}}
+
+
+    <!-- CUERPO DE LA PAGINA -->
+    {{{body}}}
+
+    <!-- PLANTILLA DE PIE DE PÁGINA -->
+    {{>footer}}
+
+
+	<!-- NOTE: All scripts needed JQuery or ZeptoJS -->
+	<!-- Hamburger script -->
+	<script>
+		let btn = $('#hamburger');
+		let nav = $('#menu');
+
+		function navToggle() {
+			btn.toggleClass('open');
+			nav.toggleClass('flex');
+			nav.toggleClass('hidden');
+		}
+	</script>
+
+	<!-- Navmenu script -->
+	<script>
+		let body = $('body');
+		let navbarMenu = $('#navbarMenu');
+		let screenHeight = $(window).height();
+		let scrollPosition = $(window).scrollTop();
+		let classCSS = {
+			HIDDEN: 'hidden',
+			OPACITY_FULL: 'opacity-100'
+		};
+		let getClassRemoveAndAdd = {
+			true: [classCSS.HIDDEN, classCSS.OPACITY_FULL],
+			false: [classCSS.OPACITY_FULL, classCSS.HIDDEN]
+		};
+
+		$(document).on('ready', handleDisplayNavmenu);
+		$(window).on('resize', () => screenHeight = $(window).height());
+		$(window).on('scroll', () => scrollPosition = $(window).scrollTop());
+		$(window).on('scroll', handleDisplayNavmenu);
+
+		function handleDisplayNavmenu() {
+			let toRemove, toAdd;
+			let isVisibleHeader = scrollPosition >= screenHeight;
+
+			[toRemove, toAdd] = getClassRemoveAndAdd[isVisibleHeader];
+
+			navbarMenu.addClass(toAdd)
+				.removeClass(toRemove);
+		}
+	</script>
+
+	<!-- InputFile script -->
+	<script>
+	</script>
+
+	<!-- Theme script -->
+	<script>
+	</script>
+
+	<!-- Languages script -->
+	<script>
+	</script>
+
+	<!-- Copyright Full Year script -->
+	<script>
+		let copyrightYear = $('#copyrightYear');
+
+		$(document).on('ready', checkCopyrightYear);
+
+		function checkCopyrightYear () {
+			let currentYear = (new Date()).getFullYear().toString();
+			let writeYear = copyrightYear.html();
+			let isEqualsValue = currentYear == writeYear;
+
+			if (!isEqualsValue) copyrightYear.html(currentYear);
+			return;
+		}
+	</script>
+
+	<!-- Only if you have a prehistoric browser -->
+	<noscript>
+	</noscript>
+
+</body>
+</html>

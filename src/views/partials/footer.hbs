@@ -1,0 +1,135 @@
+<footer class="bg-gray-800 pt-10 pt-10">
+
+    <!-- All links -->
+    <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-start justify-left">
+
+        <!-- Special links -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+
+            <!-- Title -->
+            <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+                <h4>Special links</h4>
+            </div>
+
+            <!-- Links -->
+            <nav class="grid grid-flow-row gap-y-0 ">
+                <!-- About me! -->
+                <a href="#about-me" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">About me</a>
+                <!-- Skills -->
+                <a href="#skills" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Skills</a>
+                <!-- Portfolio -->
+                <a href="#portfolio" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Portfolio</a>
+                <!-- Work -->
+                <a href="#my-work" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Experiences</a>
+                <!-- Contact me -->
+                <a href="#contact-me" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Contact me</a>
+            </nav>
+        </div>
+
+        <!-- Social media -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+
+            <!-- Title -->
+            <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+                <h4>Social Media</h4>
+            </div>
+
+            <!-- Links -->
+            <nav class="grid grid-flow-row gap-y-0 ">
+                <!-- Twitter -->
+                <a href="https://twitter.com/DannyCastle96" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Twitter</a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/DannyCastle96/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Instagram</a>
+                <!-- LinkedIn -->
+                <a href="https://es.linkedin.com/in/dcastilloguindos" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">LinkedIn</a>
+                <!-- Gmail -->
+                <a href="mailto:danielcastilloguindos@gmail.com" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Gmail</a>
+                <!-- GitHub -->
+                <a href="https://github.com/DanielCastilloGuindos" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">GitHub</a>
+            </nav>
+        </div>
+
+        <!-- Themes -->
+        <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12 hidden">
+
+
+            <!-- Title -->
+            <div class="text-xs uppercase text-gray-400 font-medium mb-6">
+                <h4>Themes</h4>
+            </div>
+
+            <!-- Options -->
+            <nav>
+                <form class="flex flex-row justify-start gap-x-1">
+
+                    {{!-- Light theme --}}
+                    <label class="flex items-center justify-around w-20 h-10 bg-white border border-gray-100 rounded-md px-2 py-3 cursor-pointer">
+
+                        <input type="radio" name="theme" checked>
+
+                        <div class="inline-flex justify-center items-center h-8 w-8">
+                            <svg class="icon" width="17" height="17" viewBox="0 0 17 17"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.435 3.458a.736.736 0 101.472 0V1.43a.736.736 0 10-1.472 0v2.03zm6.393.62a.736.736 0 10-1.041-1.042L11.352 4.47a.736.736 0 101.041 1.041l1.435-1.435zM8.17 6.272a2.42 2.42 0 100 4.84 2.42 2.42 0 000-4.84zm-3.892 2.42a3.892 3.892 0 117.784 0 3.892 3.892 0 01-7.784 0zm11.892.013c0 .406-.33.736-.736.736h-2.03a.736.736 0 110-1.473h2.03c.406 0 .736.33.736.737zm-2.343 5.644a.736.736 0 01-1.041 0l-1.435-1.435a.736.736 0 111.041-1.041l1.435 1.434a.736.736 0 010 1.042zm-6.393 1.606a.736.736 0 101.472 0v-2.029a.736.736 0 10-1.472 0v2.03zm-3.762-7.25c0 .406-.33.736-.737.736H.907a.736.736 0 110-1.473h2.03c.406 0 .736.33.736.737zm1.317 4.209a.736.736 0 00-1.041-1.042l-1.435 1.435a.736.736 0 101.042 1.042l1.434-1.435zm0-7.403a.736.736 0 01-1.041 0L2.514 4.077a.736.736 0 011.042-1.041L4.99 4.47a.736.736 0 010 1.041z">
+                                </path>
+                            </svg>
+                        </div>
+                    </label>
+
+                    {{!-- Dark theme --}}
+                    <label
+                        class="flex items-center justify-around w-20 h-10 bg-gray-900 border border-gray-100 rounded-md px-2 py-3 cursor-pointer">
+
+                        <input type="radio" name="theme">
+
+                        <div class="inline-flex justify-center items-center h-8 w-8">
+                            <svg class="icon" width="16" height="16" viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill='#fff' fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.821 2.094c-1.913 1.29-3.249 3.292-3.249 5.65 0 2.321 1.295 4.298 3.16 5.59a6.25 6.25 0 01-2.567.545 6.272 6.272 0 01-2.098-.358 3.57 3.57 0 01-1.209.914 7.56 7.56 0 003.307.756 7.55 7.55 0 003.907-1.08c.601-.363.443-1.219-.16-1.578-1.84-1.095-3.028-2.833-3.028-4.789 0-1.984 1.223-3.743 3.107-4.835.606-.351.774-1.203.18-1.573A7.55 7.55 0 0011.165.194c-4.169 0-7.549 3.357-7.549 7.499 0 .399.032.79.092 1.172a3.568 3.568 0 011.228-.88 6.236 6.236 0 01-.007-.292c0-3.409 2.784-6.187 6.236-6.187.952 0 1.852.211 2.656.588zM6.11 8.57c-1.11 0-2.075.63-2.55 1.552a2.17 2.17 0 00-.852-.173 2.163 2.163 0 00-2.167 2.158 2.16 2.16 0 001.842 2.133.659.659 0 00.177.025h3.792a.656.656 0 00.216-.037 2.852 2.852 0 002.404-2.81A2.855 2.855 0 006.11 8.57zm-3.453 4.382a.85.85 0 01-.804-.846.85.85 0 01.855-.845c.28 0 .528.132.685.338a.656.656 0 001.175-.334A1.545 1.545 0 016.11 9.883c.86 0 1.55.691 1.55 1.535 0 .787-.6 1.442-1.379 1.526a.645.645 0 00-.06.01H2.658z">
+                                </path>
+                            </svg>
+                        </div>
+                    </label>
+
+                </form>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- Copyright Bar & Social media -->
+    <div class="pt-2">
+        <div class="flex pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-gray-400 text-sm flex-col md:flex-row max-w-6xl">
+
+            <!-- Copyright -->
+            <div class="mt-2">
+                <p>&copy; Copyright <span id="copyrightYear">2021</span> danielcastilloguindos.com.</p>
+                <p>All Rights Reserved.</p>
+            </div>
+
+            <!-- Social media -->
+            <!-- Required Unicons (if you want) -->
+            <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
+                <a href="#" class="w-6 mx-1">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+                <a href="#" class="w-6 mx-1">
+                    <i class="uil uil-twitter-alt"></i>
+                </a>
+                <a href="#" class="w-6 mx-1">
+                    <i class="uil uil-youtube"></i>
+                </a>
+                <a href="#" class="w-6 mx-1">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+                <a href="#" class="w-6 mx-1">
+                    <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</footer>

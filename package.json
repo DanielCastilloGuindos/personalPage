@@ -1,0 +1,31 @@
+{
+  "name": "personalPage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "nodemon -e hbs,css,js,json src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielCastilloGuindos/personalPage.git"
+  },
+  "keywords": [],
+  "author": "Daniel Castillo <danielcastilloguindos@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielCastilloGuindos/personalPage/issues"
+  },
+  "homepage": "https://github.com/DanielCastilloGuindos/personalPage#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "i18n": "^0.13.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

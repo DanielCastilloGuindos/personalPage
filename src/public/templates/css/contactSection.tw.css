@@ -1,0 +1,11 @@
+div[role='info-box']:hover div[role="logo-content"]  {
+    --tw-scale-x: 0;
+    --tw-scale-y: 0;
+    animation-delay: .5s;
+}
+div[role="info-content"] {
+    --tw-translate-y: calc(100% - 5px);
+}
+div[role='info-box']:hover div[role="info-content"]  {
+    --tw-translate-y: -100;
+}

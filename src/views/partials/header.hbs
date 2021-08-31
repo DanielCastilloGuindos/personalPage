@@ -1,0 +1,98 @@
+<header id="top" class="relative h-screen ">
+
+    <!-- Navbar top with Logo, hamburger button & other options -->
+    <div id="navbarMenu" class="fixed top-0 left-0 w-full flex justify-center bg-white shadow-none md:shadow-lg transition duration-500 delay-200 opacity-0 z-50">
+        <div class="w-full md:max-w-4xl flex flex-col md:flex-row justify-around md:justify-between items-center py-1 ">
+
+            <!-- Logo & hamburger button -->
+            <div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center px-4 md:px-0">
+
+                <!-- Logo -->
+                <a href="#top" class="no-underline py-1">
+                    <h1 class="font-bold text-2xl tracking-widest uppercase" style="font-family: 'Sacramento', cursive;">D</h1>
+                </a>
+
+                <!-- Hamburger -->
+                <button id="hamburger" class="hamburger block sm:hidden focus:outline-none" type="button"
+                    onclick="navToggle();">
+                    <span class="hamburger__top-bun"></span>
+                    <span class="hamburger__center-ingredients"></span>
+                    <span class="hamburger__bottom-bun"></span>
+                </button>
+
+            </div>
+
+            <!-- Themes, languages & Special links -->
+            <div id="menu" class="w-full md:w-auto self-end hidden md:flex flex-col-reverse md:flex-row gap-5 justify-center items-center h-full py-1 md:py-0 text-2xl md:text-lg shadow-lg md:shadow-none">
+
+                <!-- Themes -->
+                <div></div>
+
+                <!-- Language -->
+                <div></div>
+
+                <!-- Special Links -->
+                <nav class="w-full md:auto flex flex-col md:flex-row items-center text-gray-900 font-bold no-underline">
+                    <a href="#about-me" class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">About</a>
+                    <a href="#portfolio" class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">Portfolio</a>
+                    <a href="#my-work" class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">Work</a>
+                    <a href="#contact-me" class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">Contact</a>
+                </nav>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Wecome! I am Daniel Castillo Guindos -->
+    <div class="w-full h-full flex flex-col justify-center items-center gap-3 sm:gap-6 md:gap-10">
+
+        <!-- Polaroid image -->
+        <div class="relative inline-block p-2 pb-0 bg-white border border-2 border-black border-opacity-10 shadow-sm sm:shadow md:shadow-lg transform rotate-3">
+            {{!-- <img src="https://unsplash.it/300/300" class="w-40 sm:w-52 md:w-96"> --}}
+            <img src="/media/img/me.jpeg" class="w-40 sm:w-52 md:w-96">
+
+            <div class="py-4 w-full flex justify-center">
+                <p class="text-sm sm:text-lg md:text-3xl" style="font-family: 'Caveat', cursive;">Welcome! I'm </p>
+            </div>
+        </div>
+
+        <!-- Welcome! I am... -->
+        <div class="flex flex-col justify-center text-center">
+            <!-- TODO: Cambiarlo para que sea animado -->
+            <h1 class="text-xl sm:text-2xl md:text-5xl text-gray-800 font-bold mb-6 font-black mix-blend-lighten uppercase">Daniel<br>Castillo Guindos</h1>
+
+            <h2 class="text-sm sm:text-xl text-gray-800">Full Stack Developer</h2>
+        </div>
+
+    </div>
+
+    <!-- Github symbol -->
+    <div class="absolute right-0 top-0 w-0 h-0 flex justify-center items-center border border-black"
+        style="border-width: 40px; border-left-color: transparent; border-bottom-color: transparent;">
+
+        <a href="https://github.com/DanielCastilloGuindos/personalPage" target="__blank" class="relative w-full h-full transform rotate-45">
+
+            <!-- Icon GitHub -->
+            <svg height="32" width="32" viewBox="0 0 16 16" version="1.1" aria-hidden="true"
+                class="fill-current text-white absolute bottom-0 left-1/2 transform -translate-x-1/2">
+                <path fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                </path>
+            </svg>
+
+        </a>
+
+    </div>
+
+    <!-- Down Arrow symbol -->
+    <div class="absolute left-1/2 bottom-0 transform -translate-x-1/2 w-8 md:w-16 h-8 md:h-16 flex justify-center align-middle content-center items-center">
+    
+        <!-- Icon Arrow -->
+        <svg class="animate-bounce w-6 h-6 text-amber-900" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+
+    </div>
+
+</header>
