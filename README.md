@@ -1,6 +1,8 @@
 # Portfolio
 
 ![Porfolio Logo](/src/public/media/img/logo.jpeg)
+
+
 Repository containing with Nodejs my portfolio.
 
 ---
@@ -18,7 +20,8 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 You can install nodejs and npm easily with apt install, just run the following commands.
 
-```$ sudo apt install nodejs
+```
+$ sudo apt install nodejs
 $ sudo apt install npm
 ```
 
@@ -28,17 +31,20 @@ You can find more information about the installation on the [official Node.js we
 If the installation was successful, you should be able to run the following command.
 
 
-```$ node --version
+```
+$ node --version
 ```
 v8.11.3
 
-```$ npm --version
+```
+$ npm --version
 ```
 6.1.0
 
 If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
-```$ npm install npm -g
+```
+$ npm install npm -g
 ```
 
 
@@ -47,23 +53,27 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 * Clone the repository
 
-```$ git clone https://github.com/DanielCastilloGuindos/portfolio.git porfolioDCG
+```
+$ git clone https://github.com/DanielCastilloGuindos/portfolio.git porfolioDCG
 ```
 
 * Install dependencies
 
-```$ cd porfolioDCG
+```
+$ cd porfolioDCG
 $ npm install
 ```
 
 * Build and run the project
 
-```$ npm start
+```
+$ npm start
 ```
 
 * Run the project in dev mode
 
-```$ npm test
+```
+$ npm test
 ```
 
 *Navigate to [localhost](http://localhost:5006)
