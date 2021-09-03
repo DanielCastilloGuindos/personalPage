@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+	<title>Daniel Castillo Guindos - Página personal</title>
+
+	<!-- Meta info -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="X-UA-Compatible" content="IE=7" />
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Daniel Castillo Guindos - Página personal</title>
-    <link rel="shortcut icon" href="/media/icon/favicon.ico" type="image/x-icon">
 
-
-	<meta name="description" content="Repository containing with Nodejs my portfolio." />
+	<meta name="language" content="ES">
 	<meta name="keywords" content='Daniel Castillo Guindos,Portfolio,Daniel Castillo,' />
 	<meta name="robots" content="index,follow" />
+	<meta name="copyright" content="DanielCastilloGuindos">
+	<meta name="author" content="Daniel Castillo Guindos, danielcastilloguindos@gmail.com">
+	<meta name="description" content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc." />
+	
 
 	<meta itemprop="name" content="Daniel Castillo Guindos - Página personal">
-	<meta itemprop="description" content="Repository containing with Nodejs my portfolio.">
+	<meta itemprop="description" content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc.">
 	<meta itemprop="image" content="https://danielcastilloguindos.github.io/portfolio/src/public/media/img/me.jpeg">
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@publisher_handle">
 	<meta name="twitter:title" content="Daniel Castillo Guindos - Página personal">
-	<meta name="twitter:description" content="Repository containing with Nodejs my portfolio.">
+	<meta name="twitter:description" content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@dannyCastle96">
 	<meta name="twitter:creator" content="@dannyCastle96">
 	
 	<meta property="og:title" content="Daniel Castillo Guindos - Página personal" />
+	<meta property="og:description" content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc." />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="https://danielcastilloguindos.github.io/portfolio/" />
 	<meta property="og:image" content="https://danielcastilloguindos.github.io/portfolio/src/public/media/img/me.jpeg" />
-	<meta property="og:description" content="Repository containing with Nodejs my portfolio." />
+	
+	<!-- Favicon -->
+    <link rel="shortcut icon" href="/media/icon/favicon.ico" type="image/x-icon">
 
 	<!-- TAILWIND -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
@@ -50,10 +58,11 @@
 			padding: 0;
 			box-sizing: border-box;
 		}
-	</style>
+		
+		html {
+			scroll-behavior:  smooth;
+		}
 
-	<!-- Scroll bar modern. -->
-	<style>
 		::-webkit-scrollbar-track {
 			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 			background-color: #F5F5F5;
@@ -74,13 +83,6 @@
 					rgba(255, 255, 255, .2) 75%,
 					transparent 75%,
 					transparent)
-		}
-	</style>
-
-	<!-- Handle Scroll to href -->
-	<style>
-		html {
-			scroll-behavior:  smooth;
 		}
 	</style>
 
@@ -188,7 +190,7 @@
     {{>footer}}
 
 
-	<!-- NOTE: All scripts needed JQuery or ZeptoJS -->
+	<!-- /-- NOTE: All scripts needed JQuery or ZeptoJS --\ -->
 	<!-- Hamburger script -->
 	<script>
 		let btn = $('#hamburger');
@@ -198,24 +200,26 @@
 		$(document).on('ready', handleHamburger);
 
 		function handleHamburger () {
-			$('#hamburger').on('click', navToggle);
+			$('#hamburger').on('click', handleClickHamburger);
 		}
 
-		function navToggle() {
-			btn.addClass('open');
-			nav.addClass('flex');
-			nav.removeClass('hidden');
+		function handleClickHamburger() {
+			btn.toggleClass('open');
+			nav.toggleClass('flex')
+				.toggleClass('hidden');
 
-			$('#hamburger').on('blur', () => setTimeout(removeToggle, 100));
+			$('#hamburger').on('blur', handleOutFocusHamburger);
 		}
 
-		
-		function removeToggle () {
-			btn.removeClass('open');
-			nav.removeClass('flex');
-			nav.addClass('hidden');
-			
-			$('#hamburger').off('blur');
+		function handleOutFocusHamburger () {
+			setTimeout(() => {
+					btn.removeClass('open');
+					nav.removeClass('flex')
+						.addClass('hidden');
+					
+					$('#hamburger').off('blur');
+				}
+				, 100);
 		}
 	</script>
 
