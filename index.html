@@ -16,27 +16,32 @@
 	<meta name="robots" content="index,follow" />
 	<meta name="copyright" content="DanielCastilloGuindos">
 	<meta name="author" content="Daniel Castillo Guindos, danielcastilloguindos@gmail.com">
-	<meta name="description" content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc." />
-	
+	<meta name="description"
+		content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc." />
+
 
 	<meta itemprop="name" content="Daniel Castillo Guindos - Página personal">
-	<meta itemprop="description" content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc.">
+	<meta itemprop="description"
+		content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc.">
 	<meta itemprop="image" content="https://danielcastilloguindos.github.io/portfolio/src/public/media/img/me.jpeg">
 
 	<meta name="twitter:title" content="Daniel Castillo Guindos - Página personal">
-	<meta name="twitter:description" content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc.">
+	<meta name="twitter:description"
+		content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc.">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@dannyCastle96">
 	<meta name="twitter:creator" content="@dannyCastle96">
-	
+
 	<meta property="og:title" content="Daniel Castillo Guindos - Página personal" />
-	<meta property="og:description" content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc." />
+	<meta property="og:description"
+		content="¿Quieres saber sobre mi? Aqui puedes conocer mas acerca de mi. Te hablo acerca de mis experiencias, trabajos, conocimientos, etc." />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="https://danielcastilloguindos.github.io/portfolio/" />
-	<meta property="og:image" content="https://danielcastilloguindos.github.io/portfolio/src/public/media/img/me.jpeg" />
-	
+	<meta property="og:image"
+		content="https://danielcastilloguindos.github.io/portfolio/src/public/media/img/me.jpeg" />
+
 	<!-- Favicon -->
-    <link rel="shortcut icon" href="/media/icon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/media/icon/favicon.ico" type="image/x-icon">
 
 	<!-- TAILWIND -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
@@ -50,6 +55,10 @@
 
 	<!-- TODO: Descargar la fuente y enlanzarla -->
 	<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+
+	<!-- AOS CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- Normalize style -->
 	<style>
@@ -88,7 +97,7 @@
 	<!-- Handle Scroll to href -->
 	<style>
 		html {
-			scroll-behavior:  smooth;
+			scroll-behavior: smooth;
 		}
 	</style>
 
@@ -104,10 +113,9 @@
 			transition-duration: .4s;
 		}
 
-		#hamburger:hover {
-		}
+		#hamburger:hover {}
 
-		#hamburger > span {
+		#hamburger>span {
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -121,11 +129,11 @@
 			transition: all .4s ease;
 		}
 
-		#hamburger > span:nth-child(1) {
+		#hamburger>span:nth-child(1) {
 			top: 25%;
 		}
 
-		#hamburger > span:nth-child(3) {
+		#hamburger>span:nth-child(3) {
 			top: 75%;
 		}
 
@@ -134,109 +142,114 @@
 			transform: rotate(45deg);
 		}
 
-		#hamburger.open > span:nth-child(2)  {
+		#hamburger.open>span:nth-child(2) {
 			width: 0%;
 		}
 
-		#hamburger.open > span:nth-child(1),
-		#hamburger.open > span:nth-child(3)  {
+		#hamburger.open>span:nth-child(1),
+		#hamburger.open>span:nth-child(3) {
 			transition-delay: .4s;
 		}
 
-		#hamburger.open > span:nth-child(1),
-		#hamburger.open > span:nth-child(3) {
+		#hamburger.open>span:nth-child(1),
+		#hamburger.open>span:nth-child(3) {
 			top: 50%;
 		}
 
-		#hamburger.open > span:nth-child(1) {
+		#hamburger.open>span:nth-child(1) {
 			transform: translateX(-50%) rotate(0deg);
 		}
 
-		#hamburger.open > span:nth-child(3) {
+		#hamburger.open>span:nth-child(3) {
 			transform: translateX(-50%) rotate(90deg);
 		}
 	</style>
 
 	<!-- Contact section -->
 	<style>
-		div[role='info-box']:hover div[role="logo-content"]  {
+		div[role='info-box']:hover div[role="logo-content"] {
 			--tw-scale-x: 0;
 			--tw-scale-y: 0;
 			animation-delay: .5s;
 		}
+
 		div[role="info-content"] {
 			--tw-translate-y: calc(100% - 5px);
 		}
-		div[role='info-box']:hover div[role="info-content"]  {
+
+		div[role='info-box']:hover div[role="info-content"] {
 			--tw-translate-y: -100;
 		}
 	</style>
 
-    <!-- Contact form -->
-    <style>
-        input[type='text'],
-        input[type='email'],
-        input[type='tel'],
-        input[type='number'],
-        textarea {
-            background-color: transparent;
-            background-image: linear-gradient(-45deg, rgba(105, 113, 189, 1), rgba(105, 113, 189, 1)),  linear-gradient(-45deg, rgba(185, 185, 185, 0.467), rgba(185, 185, 185, 0.467));
-            background-position: 50% 99%, 50% 99%;
-            background-size: 0% .1rem, 100% .1rem;
-            background-repeat: no-repeat;
-            transition: all .5s ease;
-        }
+	<!-- Contact form -->
+	<style>
+		input[type='text'],
+		input[type='email'],
+		input[type='tel'],
+		input[type='number'],
+		textarea {
+			background-color: transparent;
+			background-image: linear-gradient(-45deg, rgba(105, 113, 189, 1), rgba(105, 113, 189, 1)), linear-gradient(-45deg, rgba(185, 185, 185, 0.467), rgba(185, 185, 185, 0.467));
+			background-position: 50% 99%, 50% 99%;
+			background-size: 0% .1rem, 100% .1rem;
+			background-repeat: no-repeat;
+			transition: all .5s ease;
+		}
 
-        input[type='text']:focus,
-        input[type='email']:focus,
-        input[type='tel']:focus,
-        input[type='number']:focus,
-        textarea:focus,
-        input[type='text']:not(:placeholder-shown),
-        input[type='email']:not(:placeholder-shown),
-        input[type='tel']:not(:placeholder-shown),
-        input[type='number']:not(:placeholder-shown),
-        textarea:not(:placeholder-shown) {
-            background-size: 100% .1rem, 100% .1rem;
-        }
+		input[type='text']:focus,
+		input[type='email']:focus,
+		input[type='tel']:focus,
+		input[type='number']:focus,
+		textarea:focus,
+		input[type='text']:not(:placeholder-shown),
+		input[type='email']:not(:placeholder-shown),
+		input[type='tel']:not(:placeholder-shown),
+		input[type='number']:not(:placeholder-shown),
+		textarea:not(:placeholder-shown) {
+			background-size: 100% .1rem, 100% .1rem;
+		}
 
-        input[type='text']:focus + label.absolute,
-        input[type='email']:focus + label.absolute,
-        input[type='tel']:focus + label.absolute,
-        input[type='number']:focus + label.absolute,
-        textarea:focus + label.absolute,
-        input[type='text']:not(:placeholder-shown) + label.absolute,
-        input[type='email']:not(:placeholder-shown) + label.absolute,
-        input[type='tel']:not(:placeholder-shown) + label.absolute,
-        input[type='number']:not(:placeholder-shown) + label.absolute,
-        textarea:not(:placeholder-shown) + label.absolute {
-            background: transparent;
-            font-size: 0.75rem;
-            line-height: 1rem;
-            transform: translateY(-100%);
-            z-index: 30;
-        }
-    </style>
-
+		input[type='text']:focus+label.absolute,
+		input[type='email']:focus+label.absolute,
+		input[type='tel']:focus+label.absolute,
+		input[type='number']:focus+label.absolute,
+		textarea:focus+label.absolute,
+		input[type='text']:not(:placeholder-shown)+label.absolute,
+		input[type='email']:not(:placeholder-shown)+label.absolute,
+		input[type='tel']:not(:placeholder-shown)+label.absolute,
+		input[type='number']:not(:placeholder-shown)+label.absolute,
+		textarea:not(:placeholder-shown)+label.absolute {
+			background: transparent;
+			font-size: 0.75rem;
+			line-height: 1rem;
+			transform: translateY(-100%);
+			z-index: 30;
+		}
+	</style>
+	
 	<!-- My TailwindCSS animations -->
 	<style>
-        .bg-image-contact {
-            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="%23000000"%3E%3Cpath d="M0 0h24v24H0V0z" fill="none"/%3E%3Cpath d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/%3E%3C/svg%3E');
-        }
+		
+		.bg-image-contact {
+			background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="%23000000"%3E%3Cpath d="M0 0h24v24H0V0z" fill="none"/%3E%3Cpath d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/%3E%3C/svg%3E');
+		}
 
-        .bg-image-close {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z'/%3E%3C/svg%3E");
-        }
+		.bg-image-close {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23000000'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z'/%3E%3C/svg%3E");
+		}
 
-        .-z-1 {
-            z-index: -1;
-        }
+		.-z-1 {
+			z-index: -1;
+		}
 	</style>
 
 	<!-- ZEPTO -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"
 		integrity="sha512-BrvVYNhKh6yST24E5DY/LopLO5d+8KYmIXyrpBIJ2PK+CyyJw/cLSG/BfJomWLC1IblNrmiJWGlrGueKLd/Ekw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 
 </head>
 
@@ -245,77 +258,107 @@
 	<header id="top" class="relative h-screen ">
 
 		<!-- Navbar top with Logo, hamburger button & other options -->
-		<div id="navbarMenu" class="fixed top-0 left-0 w-full flex justify-center bg-white shadow-none md:shadow-lg transition duration-500 delay-200 opacity-0 z-50">
-			<div class="w-full md:max-w-4xl flex flex-col md:flex-row justify-around md:justify-between items-center py-1 ">
-	
+		<div id="navbarMenu"
+			class="fixed top-0 left-0 w-full flex justify-center bg-white shadow-none md:shadow-lg transition duration-500 delay-200 opacity-0 z-50">
+			<div
+				class="w-full md:max-w-4xl flex flex-col md:flex-row justify-around md:justify-between items-center py-1 ">
+
 				<!-- Logo & hamburger button -->
-				<div class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center px-4 md:px-0">
-	
+				<div
+					class="w-full md:w-auto self-start md:self-center flex flex-row md:flex-none flex-no-wrap justify-between items-center px-4 md:px-0">
+
 					<!-- Logo -->
 					<a href="#top" class="no-underline py-1">
-						<h1 class="font-bold text-2xl tracking-widest uppercase" style="font-family: 'Sacramento', cursive;">D</h1>
+						<h1 class="font-bold text-2xl tracking-widest uppercase"
+							style="font-family: 'Sacramento', cursive;">D</h1>
 					</a>
-	
+
 					<!-- Hamburger -->
 					<button id="hamburger" class="hamburger block sm:hidden focus:outline-none" type="button">
 						<span class="hamburger__top-bun"></span>
 						<span class="hamburger__center-ingredients"></span>
 						<span class="hamburger__bottom-bun"></span>
 					</button>
-	
+
 				</div>
-	
+
 				<!-- Themes, languages & Special links -->
-				<div id="menu" class="w-full md:w-auto self-end hidden md:flex flex-col-reverse md:flex-row gap-5 justify-center items-center h-full py-1 md:py-0 text-2xl md:text-lg shadow-lg md:shadow-none">
-	
+				<div id="menu"
+					class="w-full md:w-auto self-end hidden md:flex flex-col-reverse md:flex-row gap-5 justify-center items-center h-full py-1 md:py-0 text-2xl md:text-lg shadow-lg md:shadow-none">
+
 					<!-- Themes -->
 					<div></div>
-	
+
 					<!-- Language -->
 					<div></div>
-	
+
 					<!-- Special Links -->
-					<nav class="w-full md:auto flex flex-col md:flex-row items-center text-gray-900 font-bold no-underline">
-						<a href="#about-me" class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">About</a>
-						<a href="#portfolio" class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">Portfolio</a>
-						<a href="#my-work" class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">Work</a>
-						<a href="#contact-me" class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">Contact</a>
+					<nav id="links" class="relative w-full md:auto flex flex-col md:flex-row items-center text-gray-900 font-bold no-underline">
+						<a href="#about-me"
+							class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">About</a>
+						<a href="#portfolio"
+							class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">Portfolio</a>
+						<a href="#my-work"
+							class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">Work</a>
+						<a href="#contact-me"
+							class="hover:text-red-800 w-full md:w-auto py-2 md:py-1 px-4 md:px-2">Contact</a>
+						<!-- Mark -->
+						<div id="market" class="hidden md:block absolute bottom-0 w-10 bg-gray-900 transition-all duration-500" style="height: .2rem;"></div>
 					</nav>
-	
+
+					<script>
+						let links = $('#links a');
+						let market = $('#market');
+
+						moveMarket(links[0]);
+						links.each(index => {
+							$(links[index]).click(e => moveMarket(e.target));
+						});
+
+						function moveMarket (e) {
+							market.css('left', `${e.offsetLeft}px`);
+							market.css('width', `${e.offsetWidth}px`);
+						}
+					</script>
+
 				</div>
-	
+
 			</div>
 		</div>
-	
+
 		<!-- Wecome! I am Daniel Castillo Guindos -->
-		<div class="w-full h-full flex flex-col justify-center items-center gap-3 sm:gap-6 md:gap-10">
-	
+		<div class="w-full h-full flex flex-col justify-center items-center gap-3 sm:gap-6 md:gap-10"  data-aos="flip-left" data-aos-delay='500'>
+
 			<!-- Polaroid image -->
-			<div class="relative inline-block p-2 pb-0 bg-white border border-2 border-black border-opacity-10 shadow-sm sm:shadow md:shadow-lg transform rotate-3">
+			<div
+				class="relative inline-block p-2 pb-0 bg-white border border-2 border-black border-opacity-10 shadow-sm sm:shadow md:shadow-lg transform rotate-3">
 				<!-- <img src="https://unsplash.it/300/300" class="w-40 sm:w-52 md:w-96"> -->
 				<img src="./src/public/media/img/me.jpeg" class="w-40 sm:w-52 md:w-96">
-	
+
 				<div class="py-4 w-full flex justify-center">
 					<p class="text-sm sm:text-lg md:text-3xl" style="font-family: 'Caveat', cursive;">Welcome! I'm </p>
 				</div>
 			</div>
-	
+
 			<!-- Welcome! I am... -->
-			<div class="flex flex-col justify-center text-center">
+			<div class="flex flex-col justify-center text-center" data-aos="zoom-in-up" data-aos-delay='800'>
 				<!-- TODO: Cambiarlo para que sea animado -->
-				<h1 class="text-xl sm:text-2xl md:text-5xl text-gray-800 font-bold mb-6 font-black mix-blend-lighten uppercase">Daniel<br>Castillo Guindos</h1>
-	
+				<h1
+					class="text-xl sm:text-2xl md:text-5xl text-gray-800 font-bold mb-6 font-black mix-blend-lighten uppercase">
+					Daniel<br>Castillo Guindos</h1>
+
 				<h2 class="text-sm sm:text-xl text-gray-800">Full Stack Developer</h2>
 			</div>
-	
+
 		</div>
-	
+
 		<!-- Github symbol -->
 		<div class="absolute right-0 top-0 w-0 h-0 flex justify-center items-center border border-black"
 			style="border-width: 40px; border-left-color: transparent; border-bottom-color: transparent;">
-	
-			<a href="https://github.com/DanielCastilloGuindos/personalPage" target="__blank" class="relative w-full h-full transform rotate-45">
-	
+
+			<a href="https://github.com/DanielCastilloGuindos/personalPage" target="__blank"
+				class="relative w-full h-full transform rotate-45">
+
 				<!-- Icon GitHub -->
 				<svg height="32" width="32" viewBox="0 0 16 16" version="1.1" aria-hidden="true"
 					class="fill-current text-white absolute bottom-0 left-1/2 transform -translate-x-1/2">
@@ -323,63 +366,75 @@
 						d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
 					</path>
 				</svg>
-	
+
 			</a>
-	
+
 		</div>
-	
+
 		<!-- Down Arrow symbol -->
-		<div class="absolute left-1/2 bottom-0 transform -translate-x-1/2 w-8 md:w-16 h-8 md:h-16 flex justify-center align-middle content-center items-center">
-		
+		<div
+			class="absolute left-1/2 bottom-0 transform -translate-x-1/2 w-8 md:w-16 h-8 md:h-16 flex justify-center align-middle content-center items-center">
+
 			<!-- Icon Arrow -->
-			<svg class="animate-bounce w-6 h-6 text-amber-900" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+			<svg class="animate-bounce w-6 h-6 text-amber-900" fill="none" stroke-linecap="round"
+				stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
 				<path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
 			</svg>
-	
-		</div>
-	
-	</header>
 
+		</div>
+
+	</header>
 
 	<main class="font-serif w-full mx-auto rounded-3xl bg-white dark:bg-green-900">
 
 		<!-- About me -->
-		<section id="about-me" class="flex flex-col justify-center items-center w-full p-0 md:p-16 md:pt-0 bg-gray-800 text-gray-100">
+		<section id="about-me"
+			class="flex flex-col justify-center items-center w-full p-0 md:p-16 md:pt-0 bg-gray-800 text-gray-100">
 			<div class="w-full md:max-w-4xl">
-	
+
 				<!-- Title -->
 				<div
 					class="w-full bg-gray-800 md:bg-transparent py-4 flex justify-center items-center text-2xl font-bold text-gray-300">
 					<h3>About me</h3>
 				</div>
-	
+
 				<!-- Draw and definition -->
-				<div class="relative flex flex-col md:grid md:grid-flow-col md:grid-rows-1 md:grid-cols-2 gap-14 md:gap-10 w-full px-10 py-8 bg-gray-900 rounded-none md:rounded-lg shadow-lg">
-	
+				<div
+					class="relative flex flex-col md:grid md:grid-flow-col md:grid-rows-1 md:grid-cols-2 gap-14 md:gap-10 w-full px-10 py-8 bg-gray-900 rounded-none md:rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay='500' data-aos-offset='300'>
+
 					<!-- Draw -->
 					<div class="relative w-full flex justify-center items-center text-gray-900">
 						<!-- me -->
 						<div class="relative">
-	
+
+							<!-- Body -->
+							<div class="absolute -left-12 w-32 h-14 mt-20 bg-green-900"
+								style="border-radius: 49% 51% 48% 52% / 69% 65% 35% 31%;"></div>
+
+							<!-- cuello -->
+							<div
+								class="absolute top-0 -left-1 w-12 h-28 bg-yellow-100 rounded-full transform rotate-6 shadow-inner">
+							</div>
+
 							<!-- face -->
-							<div class="relative w-14 bg-yellow-100 rounded-t-full rounded-bl-full transform -rotate-6 z-20 shadow gap-2 z-30"
+							<div class="relative w-14 bg-yellow-100 rounded-t-full rounded-bl-full transform -rotate-6 shadow gap-2"
 								style="height: 5.25rem;">
-	
+
 								<!-- hair -->
 								<div class="absolute -top-3 left-0 h-5" style="width: 4rem;">
 									<!-- top hair -->
 									<div class="w-full h-full bg-red-900 "
 										style="border-radius: 36% 64% 32% 68% / 76% 0% 100% 24%"></div>
-	
+
 									<!-- side hair -->
 									<div class="absolute top-4 -left-2 w-4 h-8 bg-red-900 shadow"
 										style="border-radius: 77% 23% 89% 11% / 33% 26% 74% 67%;"></div>
-	
+
 									<!-- sideburns -->
 									<div class="absolute top-9 left-0 w-1 h-6 bg-red-900 shadow"
 										style="border-radius: 11% 89% 21% 79% / 88% 26% 74% 12%;"></div>
 								</div>
-	
+
 								<!-- ears -->
 								<div class="">
 									<!-- left ear -->
@@ -388,176 +443,189 @@
 									<!-- right ear -->
 									<div class=""></div>
 								</div>
-	
+
 								<!-- facial expression -->
 								<div class="absolute top-5 -right-2 w-full flex flex-col justify-center items-center"
 									style="gap: .2rem;">
-	
+
 									<!-- brows -->
 									<div class="w-full flex flex-row justify-around">
 										<!-- left brow -->
 										<div class="w-4 bg-red-900 transform -rotate-12"
-											style="height: .4rem; border-radius: 88% 12% 98% 2% / 98% 78% 22% 2%;"></div>
+											style="height: .4rem; border-radius: 88% 12% 98% 2% / 98% 78% 22% 2%;">
+										</div>
 										<!-- right brow -->
 										<div class="w-4 bg-red-900 transform rotate-6"
-											style="height: .4rem; border-radius: 18% 82% 0% 100% / 58% 95% 5% 42%;"></div>
+											style="height: .4rem; border-radius: 18% 82% 0% 100% / 58% 95% 5% 42%;">
+										</div>
 									</div>
-	
+
 									<!-- eyes -->
 									<div class="w-full flex flex-row justify-around">
 										<!-- left eye -->
 										<div class="w-1 bg-black"
-											style="height: .6rem; border-radius: 45% 55% 42% 58% / 51% 53% 47% 49%;"></div>
+											style="height: .6rem; border-radius: 45% 55% 42% 58% / 51% 53% 47% 49%;">
+										</div>
 										<!-- right eye -->
 										<div class="w-1 bg-black"
-											style="height: .5rem; border-radius: 45% 55% 42% 58% / 51% 53% 47% 49%;"></div>
+											style="height: .5rem; border-radius: 45% 55% 42% 58% / 51% 53% 47% 49%;">
+										</div>
 									</div>
-	
+
 									<!-- nose -->
 									<div class="absolute left-1/2 top-3 w-3 h-5 bg-yellow-100 border border-l-0 border-t-0 border-gray-900 transform -rotate-12"
 										style="border-radius: 77% 23% 12% 88% / 92% 42% 58% 8%;"></div>
-	
+
 									<!-- mouth -->
 									<div class="w-5 rounded-t-full hidden" style="height: .1rem;"></div>
-	
+
 								</div>
-	
+
 								<!-- bear & mostache -->
 								<div
 									class="absolute left-0 bottom-0 bg-red-900 bg-opacity-20 w-full h-1/3 rounded-bl-full hidden">
-	
+
 									<!-- mostache -->
 									<div class="pl-6 flex justify-center">
 										<div class="w-4 bg-red-900 transform -rotate-12"
-											style="height: .4rem; border-radius: 71% 29% 100% 0% / 100% 47% 53% 0%;"></div>
+											style="height: .4rem; border-radius: 71% 29% 100% 0% / 100% 47% 53% 0%;">
+										</div>
 										<div class="w-3 bg-red-900 transform rotate-6"
-											style="height: .4rem; border-radius: 13% 87% 0% 100% / 75% 100% 0% 25%;"></div>
+											style="height: .4rem; border-radius: 13% 87% 0% 100% / 75% 100% 0% 25%;">
+										</div>
 									</div>
-	
+
 								</div>
-	
+
 							</div>
-	
-							<!-- cuello -->
-							<div
-								class="absolute top-0 -left-1 w-12 h-28 bg-yellow-100 rounded-full transform rotate-6 shadow-inner z-20">
-							</div>
-	
-							<!-- Body -->
-							<div class="absolute -left-12 w-32 h-14 bg-green-900"
-								style="border-radius: 49% 51% 48% 52% / 69% 65% 35% 31%;"></div>
-	
+
+
 						</div>
-	
+
 					</div>
-	
+
 					<!-- Content text -->
 					<div class="relative flex flex-col justify-start items-center gap-5 ">
-	
+
 						<!-- Text -->
 						<div class="grid grid-flow-row gap-5 text-justify">
 							<p class="text-lg text-center md:text-left">Hey! :)</p>
-	
-							<p>I <b class="text-green-700"></b>volunteer</b> at <a href="https://hoope.org" class="text-green-600 font-semibold">HOOPE | Centro de Bienestar Animal</a> taking care of animals.</p>
-	
-							<p>Dedicating my time to drawing, learning new skills, enjoying with the people close to me, playing and people close to me, playing.</p>
+
+							<p>I <b class="text-green-700">volunteer</b> at <a href="https://hoope.org"
+									class="text-green-600 font-semibold">HOOPE | Centro de Bienestar Animal</a> taking
+								care of animals.</p>
+
+							<p>Dedicating my time to drawing, learning new skills, enjoying with the people close to me,
+								playing, etc.</p>
 						</div>
-	
+
 						<!-- Animal images -->
 						<div class="w-full flex flex-row justify-center gap-10">
 							<div class="relative w-32 h-32">
-								<img src="https://hoope.org/wp-content/uploads/2020/10/adopta-perro.png" alt="" class="object-cover w-full h-full">
+								<img src="https://hoope.org/wp-content/uploads/2020/10/adopta-perro.png" alt=""
+									class="object-cover w-full h-full">
 							</div>
 							<div class="relative w-32 h-32">
-								<img src="https://hoope.org/wp-content/uploads/2020/10/adopta-gato.png" alt="" class="object-cover w-full h-full">
+								<img src="https://hoope.org/wp-content/uploads/2020/10/adopta-gato.png" alt=""
+									class="object-cover w-full h-full">
 							</div>
 						</div>
-	
+
 					</div>
-	
+
 				</div>
-	
+
 			</div>
 		</section>
-	
-		<!-- TODO: Añadir mas contenido -->
+
 		<!-- Skills -->
 		<section id="skills" class="py-4 flex flex-col justify-center items-center">
 			<div class="w-full md:max-w-4xl">
-	
+
 				<!-- Title -->
 				<div class="w-full py-4 flex justify-center items-center text-2xl font-bold text-gray-900">
 					<h3>Skills</h3>
 				</div>
-	
+
 				<!-- Skills content -->
 				<div class="flex flex-col items-center md:grid md:grid-flow-col md:grid-cols-2 gap-5 px-3 py-5">
-	
+
 					<!-- My best skills... Yeah... It's not enought... I know it. -->
-					<div class="max-w-md flex flex-col gap-5 md:max-w-full my-auto">
+					<div class="max-w-md flex flex-col gap-5 md:max-w-full my-auto" data-aos="fade-right" data-aos-delay='500' data-aos-offset="300">
 
 						<!-- Write skills -->
 						<div class="w-full flex justify-center">
 
 							<ul class="flex flex-col gap-2 justify-center items-center text-xl font-sans">
 								<li>Scrum knowledge</li>
-								<li>UI/UX design: relative</li>
+								<li>UX/UI design: relative</li>
 							</ul>
 
 						</div>
 
 						<!-- Frameworks and programing language -->
 						<div class="w-full flex justify-center items-center flex-wrap gap-2 md:gap-5">
-							
+
 							<!-- html -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" focusable="false" width="1.5em" height="1.5em"
 									preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" class="iconify"
 									data-icon="vscode-icons:file-type-html" data-inline="false">
-									<path fill="#e44f26" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30L5.902 27.201z">
+									<path fill="#e44f26"
+										d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30L5.902 27.201z">
 									</path>
 									<path fill="#f1662a" d="M16 27.858l8.17-2.265l1.922-21.532H16v23.797z"></path>
 									<path fill="#ebebeb"
-										d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83l.759 8.517H16v-3.091z"></path>
+										d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83l.759 8.517H16v-3.091z">
+									</path>
 									<path fill="#ebebeb"
 										d="M16 21.434l-.014.004l-3.442-.929l-.22-2.465H9.221l.433 4.852l6.332 1.758l.014-.004v-3.216z">
 									</path>
 									<path fill="#fff"
 										d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83H15.989z">
 									</path>
-									<path fill="#fff" d="M15.989 7.151V10.242h7.466l.062-.694l.141-1.567l.074-.83h-7.743z">
+									<path fill="#fff"
+										d="M15.989 7.151V10.242h7.466l.062-.694l.141-1.567l.074-.83h-7.743z">
 									</path>
 								</svg>
 							</div>
 
 							<!-- css -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" focusable="false" width="1.5em" height="1.5em"
 									preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" class="iconify"
 									data-icon="vscode-icons:file-type-css" data-inline="false">
-									<path fill="#1572b6" d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30L5.902 27.201z">
+									<path fill="#1572b6"
+										d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30L5.902 27.201z">
 									</path>
 									<path fill="#33a9dc" d="M16 27.858l8.17-2.265l1.922-21.532H16v23.797z"></path>
 									<path fill="#fff"
-										d="M16 13.191h4.09l.282-3.165H16V6.935h7.75l-.074.829l-.759 8.518H16v-3.091z"></path>
+										d="M16 13.191h4.09l.282-3.165H16V6.935h7.75l-.074.829l-.759 8.518H16v-3.091z">
+									</path>
 									<path fill="#ebebeb"
 										d="M16.019 21.218l-.014.004l-3.442-.93l-.22-2.465H9.24l.433 4.853l6.331 1.758l.015-.004v-3.216z">
 									</path>
 									<path fill="#fff"
 										d="M19.827 16.151l-.372 4.139l-3.447.93v3.216l6.336-1.756l.047-.522l.537-6.007h-3.101z">
 									</path>
-									<path fill="#ebebeb" d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829h7.743z">
+									<path fill="#ebebeb"
+										d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829h7.743z">
 									</path>
-									<path fill="#ebebeb" d="M16 13.191v3.091H12.601l-.062-.695l-.14-1.567l-.074-.829H16z">
+									<path fill="#ebebeb"
+										d="M16 13.191v3.091H12.601l-.062-.695l-.14-1.567l-.074-.829H16z">
 									</path>
 								</svg>
 							</div>
 
 							<!-- bootstrap -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
-								<svg width="1.5em" height="1.5em" viewBox="0 0 512 407.864" xmlns="http://www.w3.org/2000/svg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+								<svg width="1.5em" height="1.5em" viewBox="0 0 512 407.864"
+									xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="m106.344 0c-29.214 0-50.831 25.57-49.863 53.3.929 26.641-.278 61.145-8.964 89.283-8.717 28.217-23.449 46.098-47.517 48.393v25.912c24.068 2.3 38.8 20.172 47.516 48.393 8.687 28.138 9.893 62.642 8.964 89.283-.968 27.726 20.649 53.3 49.868 53.3h299.347c29.214 0 50.827-25.57 49.859-53.3-.929-26.641.278-61.145 8.964-89.283 8.717-28.221 23.413-46.1 47.482-48.393v-25.912c-24.068-2.3-38.764-20.172-47.482-48.393-8.687-28.134-9.893-62.642-8.964-89.283.968-27.726-20.645-53.3-49.859-53.3h-299.355zm240.775 251.067c0 38.183-28.481 61.34-75.746 61.34h-80.458a8.678 8.678 0 0 1 -8.678-8.678v-199.593a8.678 8.678 0 0 1 8.678-8.678h80c39.411 0 65.276 21.348 65.276 54.124 0 23.005-17.4 43.6-39.567 47.208v1.2c30.176 3.31 50.495 24.21 50.495 53.077zm-84.519-128.1h-45.876v64.8h38.639c29.87 0 46.34-12.028 46.34-33.527-.003-20.148-14.163-31.273-39.103-31.273zm-45.876 90.511v71.411h47.564c31.1 0 47.573-12.479 47.573-35.931s-16.935-35.484-49.573-35.484h-45.564z"
 										fill="#7952b3" fill-rule="evenodd" />
@@ -565,7 +633,8 @@
 							</div>
 
 							<!-- tailwindCSS -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg width="1.5em" height="1.5em" viewBox="0 0 256 154" version="1.1"
 									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									preserveAspectRatio="xMidYMid">
@@ -585,7 +654,8 @@
 							</div>
 
 							<!-- lavaScript -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" focusable="false" width="1.5em" height="1.5em"
 									preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" class="iconify"
@@ -601,7 +671,8 @@
 							</div>
 
 							<!-- jquery -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg width="2.5em" height="2em" viewBox="0 0 512 116" version="1.1"
 									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 									<defs></defs>
@@ -645,7 +716,8 @@
 							</div>
 
 							<!-- nodejs -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" focusable="false" width="1.5em" height="1.5em"
 									style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
@@ -658,7 +730,8 @@
 							</div>
 
 							<!-- handlebars -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg width="1.5em" height="1.5em" viewBox="0 0 512 124" version="1.1"
 									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									preserveAspectRatio="xMidYMid">
@@ -671,7 +744,8 @@
 							</div>
 
 							<!-- php -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg width="1.5em" height="1.5em" viewBox="0 0 256 135" version="1.1"
 									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									preserveAspectRatio="xMidYMid">
@@ -716,7 +790,8 @@
 							</div>
 
 							<!-- java -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg width="1.5em" height="1.5em" viewBox="0 0 256 346" version="1.1"
 									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									preserveAspectRatio="xMidYMid">
@@ -750,7 +825,8 @@
 							</div>
 
 							<!-- python -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" focusable="false" width="1.01em" height="1em"
 									style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
@@ -778,7 +854,8 @@
 							</div>
 
 							<!-- sql -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" focusable="false" width="1.5em" height="1.5em"
 									preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" class="iconify"
@@ -797,30 +874,33 @@
 							</div>
 
 							<!-- firebase -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" focusable="false" width="1.5em" height="1.5em"
 									preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 351" class="iconify"
 									data-icon="logos:firebase" data-inline="false">
 									<defs>
-										<filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox"
-											id="IconifyId-17b5b20267d-23654a-5">
-											<feGaussianBlur stdDeviation="17.5" in="SourceAlpha" result="shadowBlurInner1">
+										<filter x="-50%" y="-50%" width="200%" height="200%"
+											filterUnits="objectBoundingBox" id="IconifyId-17b5b20267d-23654a-5">
+											<feGaussianBlur stdDeviation="17.5" in="SourceAlpha"
+												result="shadowBlurInner1">
 											</feGaussianBlur>
 											<feOffset in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
-											<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1"
-												k3="1" result="shadowInnerInner1"></feComposite>
+											<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic"
+												k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
 											<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
 												in="shadowInnerInner1"></feColorMatrix>
 										</filter>
-										<filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox"
-											id="IconifyId-17b5b20267d-23654a-6">
-											<feGaussianBlur stdDeviation="3.5" in="SourceAlpha" result="shadowBlurInner1">
+										<filter x="-50%" y="-50%" width="200%" height="200%"
+											filterUnits="objectBoundingBox" id="IconifyId-17b5b20267d-23654a-6">
+											<feGaussianBlur stdDeviation="3.5" in="SourceAlpha"
+												result="shadowBlurInner1">
 											</feGaussianBlur>
 											<feOffset dx="1" dy="-9" in="shadowBlurInner1" result="shadowOffsetInner1">
 											</feOffset>
-											<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1"
-												k3="1" result="shadowInnerInner1"></feComposite>
+											<feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic"
+												k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
 											<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"
 												in="shadowInnerInner1"></feColorMatrix>
 										</filter>
@@ -834,17 +914,20 @@
 									<path
 										d="M0 282.998l2.123-2.972L102.527 89.512l.212-2.017L58.48 4.358C54.77-2.606 44.33-.845 43.114 6.951L0 282.998z"
 										fill="#FFC24A"></path>
-									<use fill="#FFA712" fill-rule="evenodd" xlink:href="#IconifyId-17b5b20267d-23654a-7"></use>
+									<use fill="#FFA712" fill-rule="evenodd"
+										xlink:href="#IconifyId-17b5b20267d-23654a-7"></use>
 									<use filter="url(#IconifyId-17b5b20267d-23654a-5)"
 										xlink:href="#IconifyId-17b5b20267d-23654a-7"></use>
 									<path
 										d="M135.005 150.38l32.955-33.75l-32.965-62.93c-3.129-5.957-11.866-5.975-14.962 0L102.42 87.287v2.86l32.584 60.233z"
 										fill="#F4BD62"></path>
-									<use fill="#FFA50E" fill-rule="evenodd" xlink:href="#IconifyId-17b5b20267d-23654a-8"></use>
+									<use fill="#FFA50E" fill-rule="evenodd"
+										xlink:href="#IconifyId-17b5b20267d-23654a-8"></use>
 									<use filter="url(#IconifyId-17b5b20267d-23654a-6)"
 										xlink:href="#IconifyId-17b5b20267d-23654a-8"></use>
 									<path fill="#F6820C"
-										d="M0 282.998l.962-.968l3.496-1.42l128.477-128l1.628-4.431l-32.05-61.074z"></path>
+										d="M0 282.998l.962-.968l3.496-1.42l128.477-128l1.628-4.431l-32.05-61.074z">
+									</path>
 									<path
 										d="M139.121 347.551l116.275-64.847l-33.204-204.495c-1.039-6.398-8.888-8.927-13.468-4.34L0 282.998l115.608 64.548a24.126 24.126 0 0 0 23.513.005"
 										fill="#FDE068"></path>
@@ -858,7 +941,8 @@
 							</div>
 
 							<!-- github -->
-							<div class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
+							<div
+								class="relative flex items-center justify-center w-12 h-12 mt-4 border border-gray-100 rounded-full shadow-lg">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" focusable="false" width="1.5em" height="1.5em"
 									preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" class="iconify"
@@ -870,9 +954,9 @@
 							</div>
 
 						</div>
-						
+
 					</div>
-	
+
 					<!-- draw SVG -->
 					<div class=" my-auto">
 						<svg id="a2942aa7-bf0d-42c0-bc52-bf4c952347c5" data-name="Layer 1"
@@ -1010,7 +1094,8 @@
 							<path
 								d="M914.0349,352.22648s-34.86834,12.84623-34.86834,26.61005,21.10452,73.86583,21.10452,73.86583,0,15.599-.91759,19.26935-15.35289,35.68266-2.75276,38.53869c7.865,1.78274,14.32706,6.466,14.9108,13.07554.6932,7.84884-5.31545,17.75542-4.81733,19.49883.91758,3.21156,6.42311,7.7995,5.96432,5.50553s3.67035-35.32713,10.09347-50.00854-2.75277-113.32211-4.58794-126.16834A141.98834,141.98834,0,0,0,914.0349,352.22648Z"
 								transform="translate(-137.2515 -127.40779)" fill="#575a89" />
-							<polygon points="758.432 392.278 766.69 412.007 772.884 399.39 765.772 383.561 758.432 392.278"
+							<polygon
+								points="758.432 392.278 766.69 412.007 772.884 399.39 765.772 383.561 758.432 392.278"
 								fill="#ffb9b9" />
 							<path
 								d="M939.53568,327.55077s7.53239,3.1124,12.12033,3.1124,23.39849,9.63467,16.97537,15.599-16.05779,7.3407-20.64573,16.05779-6.88191,10.09347-6.88191,10.09347L932.93558,361.441s11.37972-12.88488,10.92093-17.014S939.53568,327.55077,939.53568,327.55077Z"
@@ -1033,400 +1118,412 @@
 							<ellipse cx="792.997" cy="182.5" rx="3.5" ry="5.5" fill="#ffb9b9" />
 						</svg>
 					</div>
-	
+
 				</div>
-	
+
 			</div>
 		</section>
-	
+
 		<!-- TODO: Completar los proyectos -->
 		<!-- Portfolio -->
 		<section id="portfolio" class="flex flex-col justify-center items-center">
-			<div class="w-full md:max-w-4xl">
-	
+			<div class="w-full md:w-11/12">
+
 				<!-- Title -->
 				<div class="w-full py-4 flex justify-center items-center text-2xl font-bold text-gray-900">
 					<h3>Portfolio</h3>
 				</div>
-	
+
 				<!-- Browsers -->
 				<div class="grid sm:grid-cols-2 gap-2 pt-5 pb-3">
-	
+
 					<!-- Light browser -->
-					<figure class="relative grid w-full bg-white border border-gray-200 shadow-lg rounded">
+					<figure class="relative grid w-full bg-white border border-gray-200 shadow-lg rounded" data-aos="flip-up" data-aos-delay='500' data-aos-offset="300">
 						<blockquote class="h-8 flex gap-2 px-3 py-2 bg-gray-100">
 							<div class="block w-3 h-3 rounded-full bg-red-300"></div>
 							<div class="block w-3 h-3 rounded-full bg-yellow-300"></div>
 							<div class="block w-3 h-3 rounded-full bg-green-300"></div>
 						</blockquote>
-	
+
 						<figcaption class="w-full">
-	
-							<a href="https://bancoeconos.org/" target="_blank" rel="noopener noreferrer" class="w-full h-full">
-								<img src="./src/public/media/img/bancoEconos.jpeg" alt='Banco econos' class="object-cover">
+
+							<a href="https://bancoeconos.org/" target="_blank" rel="noopener noreferrer"
+								class="w-full h-full">
+								<img src="./src/public/media/img/bancoEconos.jpeg" alt='Banco econos'
+									class="object-cover">
 							</a>
-	
+
 						</figcaption>
 					</figure>
-	
+
 					<!-- Night browser -->
-					<figure class="relative grid w-full bg-gray-800 text-gray-300 border border-black shadow-lg rounded bggrad">
+					<figure
+						class="relative grid w-full bg-gray-800 text-gray-300 border border-black shadow-lg rounded bggrad" data-aos="flip-up" data-aos-delay='800' data-aos-offset="300">
 						<blockquote class="h-8 flex gap-2 px-3 py-2 bg-gray-900">
 							<div class="block w-3 h-3 rounded-full bg-red-300"></div>
 							<div class="block w-3 h-3 rounded-full bg-yellow-300"></div>
 							<div class="block w-3 h-3 rounded-full bg-green-300"></div>
 						</blockquote>
-	
+
 						<figcaption class="w-full h-40 px-3 py-2 flex justify-center items-center">
-							<p class="text-gray-500 text-3xl transform rotate-12">¡Proximamente!</p>
+							<p class="text-gray-500 text-3xl transform rotate-12">Coming soon!</p>
 						</figcaption>
 					</figure>
-	
+
 				</div>
-	
+
 			</div>
 		</section>
-	
-		<!-- TODO: Mejorar los badges -->
+
 		<!-- My Work -->
 		<section id="my-work" class="bg-gray-100 flex flex-col justify-center items-center">
 			<div class="w-full md:max-w-4xl">
-	
+
 				<!-- Title -->
 				<div class="w-full py-4 flex justify-center items-center text-2xl font-bold text-gray-900">
 					<h3>Experiences</h3>
 				</div>
-	
+
 				<!-- Work Time Line -->
 				<div class="flex flex-col py-5 px-0 md:px-8">
-	
+
 					<!-- I-SEC -->
 					<div class="relative flex flex-row justify-start">
-	
+
 						<!-- Description -->
-						<figure class="rounded-md" style="width: 45%;">
+						<figure class="rounded-md" style="width: 45%;" data-aos="fade-right" data-aos-delay='500' data-aos-offset='300'>
 							<blockquote class="flex flex-col justify-center items-center h-14">
 								<h4 class="text-center md:text-left font-semibold text-xl">I-SEC</h4>
 								<h5 class="text-xs font-light">IT specialist</h5>
 							</blockquote>
-	
+
 							<figcaption class="px-1 md:px-4 py-2">
 								<div
 									class="relative bg-white rounded-xl rounded-tr-none rounded-bl-none px-4 py-2 flex flex-col gap-2 shadow">
-	
+
 									<!-- Logros -->
 									<div class="">
-	
+
 										<!-- Title -->
 										<div class="font-light hidden">
 											<h5>Logros</h5>
 										</div>
-	
+
 										<!-- Text -->
 										<div class="text-sm">
 											<p>Head of the IT department.</p>
-											<p>In charge of the E-Learning platform together with our group in the Netherlands.</p>
+											<p>In charge of the E-Learning platform together with our group in the
+												Netherlands.</p>
 											<p>Responsible for the maintenance part of the network.</p>
 											<p>Making an internal website to help streamline various tasks.</p>
 										</div>
-	
+
 									</div>
-	
+
 									<!-- Tecnologies -->
 									<div class="">
-	
+
 										<!-- Title -->
 										<div class="font-light text-gray-500">
-											<h5>Tecnologías</h5>
+											<h5>Technologies</h5>
 										</div>
-	
+
 										<!-- Text -->
-										<div class="text-sm text-white leading-loose gap-10">
-											<span class="px-3 py-1 bg-green-700 rounded-full">HTML5</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">CSS3</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">Bootstrap</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">JavaScript</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">NodeJS</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">Handlebars</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">Bitbucket(Github)</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">Firebase</span>
+										<div class="flex flex-row flex-wrap justify-start text-xs text-white leading-loose gap-1">
+											<span class="text-center px-3 bg-green-700 rounded-full">HTML5</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">CSS3</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">Bootstrap</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">JavaScript</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">NodeJS</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">Handlebars</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">Bitbucket (Github)</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">Firebase</span>
 										</div>
-	
+
 									</div>
 
 								</div>
 							</figcaption>
 						</figure>
-	
+
 						<!-- Line bar -->
 						<div class="flex flex-col justify-start items-center pt-14" style="width:10%;">
-							<div class="block w-10 h-10 bg-green-500 rounded-full shadow-lg z-10">
+							<div class="block w-10 h-10 bg-green-700 rounded-full shadow-lg z-10">
 							</div>
-	
-							<div class="absolute block bg-gradient-to-b from-transparent to-blue-900 top-0 bottom-0 left-1/2 transform -translate-x-1/2"
+
+							<div class="absolute block bg-gradient-to-b from-transparent to-indigo-900 top-0 bottom-0 left-1/2 transform -translate-x-1/2"
 								style="width: 2px;">
 							</div>
 						</div>
-	
+
 						<!-- Date -->
-						<div class="px-1 md:px-4 pt-14" style="width:45%;">
+						<div class="px-1 md:px-4 pt-14" style="width:45%;" data-aos="fade-left" data-aos-delay='500' data-aos-offset='300'>
 							<div class="text-sm font-mono">
 								<p>feb 2021 – actualidad</p>
 							</div>
 						</div>
-	
+
 					</div>
-	
+
 					<!-- Exceltic -->
 					<div class="relative flex flex-row-reverse justify-start">
-	
+
 						<!-- Description -->
-						<figure class="rounded-md" style="width: 45%;">
+						<figure class="rounded-md" style="width: 45%;" data-aos="fade-left" data-aos-delay='500' data-aos-offset='300'>
 							<blockquote class="flex flex-col justify-center items-center h-14">
 								<h4 class="text-center md:text-left font-semibold text-xl">Exceltic</h4>
-								<h5 class="text-xs font-light text-center">Internships - Grado Superior Desarrollo de Aplicaciones Multiplataforma</h5>
+								<h5 class="text-xs font-light text-center">Internships - Grado Superior Desarrollo de
+									Aplicaciones Multiplataforma</h5>
 							</blockquote>
-	
+
 							<figcaption class="px-1 md:px-4 py-2">
 								<div
 									class="relative bg-white px-4 py-2 rounded-xl rounded-tl-none flex flex-col gap-2  rounded-br-none shadow">
-	
+
 									<!-- Logros -->
 									<div class="">
-	
+
 										<!-- Title -->
 										<div class="font-light hidden">
 											<h5>Logros</h5>
 										</div>
-	
+
 										<!-- Text -->
 										<div class="text-sm">
-											<p>Together with my colleagues, I carried out the maintenance and implementation of software through Sprints.</p>
+											<p>Together with my colleagues, I carried out the maintenance and
+												implementation of software through Sprints.</p>
 										</div>
-	
+
 									</div>
-	
+
 									<!-- Tecnologias -->
 									<div class="">
-	
+
 										<!-- Title -->
 										<div class="font-light text-gray-500">
-											<h5>Tecnologías</h5>
+											<h5>Technologies</h5>
 										</div>
-	
+
 										<!-- Text -->
-										<div class="text-sm text-white leading-loose gap-10">
-											<span class="px-3 py-1 bg-green-700 rounded-full">HTML5</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">CSS3</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">JavaScript</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">PHP7</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">Smarty</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">Bitbucket(Github)</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">MySQL</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">Scrum</span>
+										<div class="flex flex-row flex-wrap justify-start text-xs text-white leading-loose gap-1">
+											<span class="text-center px-3 bg-green-700 rounded-full">HTML5</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">CSS3</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">JavaScript</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">PHP7</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">Smarty</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">Bitbucket (Github)</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">MySQL</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">Scrum</span>
 										</div>
-	
+
 									</div>
-	
+
 								</div>
 							</figcaption>
 						</figure>
-	
+
 						<!-- Line bar -->
 						<div class="flex flex-col justify-start items-center pt-14" style="width:10%;">
-							<div class="block w-10 h-10 bg-blue-900 rounded-full shadow-lg z-10">
+							<div class="block w-10 h-10 bg-indigo-900 rounded-full shadow-lg z-10">
 							</div>
-	
-							<div class="absolute block bg-blue-900 top-0 bottom-0 left-1/2 transform -translate-x-1/2"
+
+							<div class="absolute block bg-indigo-900 top-0 bottom-0 left-1/2 transform -translate-x-1/2"
 								style="width: 2px;">
 							</div>
 						</div>
-	
+
 						<!-- Date -->
-						<div class="px-1 md:px-4 pt-14 text-right" style="width:45%;">
+						<div class="px-1 md:px-4 pt-14 text-right" style="width:45%;" data-aos="fade-right" data-aos-delay='500' data-aos-offset='300'>
 							<div class="text-sm font-mono">
 								<p>oct 2020 – dic 2020</p>
 							</div>
 						</div>
-	
+
 					</div>
-	
+
 					<!-- Iberdrola -->
 					<div class="relative flex flex-row justify-start">
-	
+
 						<!-- Description -->
-						<figure class="rounded-md" style="width: 45%;">
+						<figure class="rounded-md" style="width: 45%;" data-aos="fade-right" data-aos-delay='500' data-aos-offset='300'>
 							<blockquote class="flex flex-col justify-center items-center h-14">
 								<h4 class="text-center md:text-left font-semibold text-xl">Iberdrola</h4>
-								<h5 class="text-xs font-light">Operador telefónico</h5>
+								<h5 class="text-xs font-light">Telephone operator</h5>
 							</blockquote>
-	
+
 							<figcaption class="px-1 md:px-4 py-2">
 								<div
 									class="relative bg-white rounded-xl rounded-tr-none rounded-bl-none px-4 py-2 flex flex-col gap-2 shadow">
-	
+
 									<!-- Logros -->
 									<div class="">
-	
+
 										<!-- Title -->
 										<div class="font-light hidden">
 											<h5>Logros</h5>
 										</div>
-	
+
 										<!-- Text -->
 										<div class="text-sm">
-											<p>Through <span class="font-semibold">JT Hiring ETT S.L.</span> perform the tasks in <span class="font-bold">Iberdrola</span> of customer service via telephone for the management of their tariffs and payment relations. of payment.</p>
+											<p>Through <span class="font-semibold">JT Hiring ETT S.L.</span> perform the
+												tasks in <span class="font-bold">Iberdrola</span> of customer service
+												via telephone for the management of their tariffs and payment relations.
+												of payment.</p>
 										</div>
-	
+
 									</div>
-	
+
 									<!-- Tecnologies -->
 									<div class="">
-	
+
 										<!-- Title -->
 										<div class="font-light text-gray-500">
-											<h5>Aptitudes</h5>
+											<h5>Skills</h5>
 										</div>
-	
+
 										<!-- Text -->
-										<div class="text-sm text-white leading-loose gap-10">
-											<span class="px-3 py-1 bg-green-700 rounded-full">Atención al cliente</span>
-											<span class="px-3 py-1 bg-green-700 rounded-full">Gestión telefonica</span>
+										<div class="flex flex-row flex-wrap justify-start text-xs text-white leading-loose gap-1">
+											<span class="text-center px-3 bg-green-700 rounded-full">Customer service</span>
+											<span class="text-center px-3 bg-green-700 rounded-full">Telephone
+												management</span>
 										</div>
-	
+
 									</div>
 
 								</div>
 							</figcaption>
 						</figure>
-	
+
 						<!-- Line bar -->
 						<div class="flex flex-col justify-start items-center pt-14" style="width:10%;">
-							<div class="block w-10 h-10 bg-blue-900 rounded-full shadow-lg z-10">
+							<div class="block w-10 h-10 bg-indigo-900 rounded-full shadow-lg z-10">
 							</div>
-	
-							<div class="absolute block bg-blue-900 top-0 bottom-0 left-1/2 transform -translate-x-1/2"
+
+							<div class="absolute block bg-indigo-900 top-0 bottom-0 left-1/2 transform -translate-x-1/2"
 								style="width: 2px;">
 							</div>
 						</div>
-	
+
 						<!-- Date -->
-						<div class="px-1 md:px-4 pt-14" style="width:45%;">
+						<div class="px-1 md:px-4 pt-14" style="width:45%;" data-aos="fade-left" data-aos-delay='500' data-aos-offset='300'>
 							<div class="text-sm font-mono">
 								<p>ago 2020 – sep 2020</p>
 							</div>
 						</div>
-	
+
 					</div>
-	
+
 					<!-- Wanda Metropolitano -->
 					<div class="relative flex flex-row-reverse justify-start">
-	
+
 						<!-- Description -->
-						<figure class="rounded-md" style="width: 45%;">
+						<figure class="rounded-md" style="width: 45%;" data-aos="fade-left" data-aos-delay='500' data-aos-offset='300'>
 							<blockquote class="flex flex-col justify-center items-center h-14">
 								<h4 class="text-center md:text-left font-semibold text-xl">Wanda Metropolitano</h4>
-								<h5 class="text-xs font-light">Auxiliar de servicios</h5>
+								<h5 class="text-xs font-light">Service Assistant</h5>
 							</blockquote>
-	
+
 							<figcaption class="px-1 md:px-4 py-2">
-								<div class="relative bg-white rounded-xl rounded-tl-none rounded-br-none px-4 py-2 flex flex-col gap-2 shadow">
-	
+								<div
+									class="relative bg-white rounded-xl rounded-tl-none rounded-br-none px-4 py-2 flex flex-col gap-2 shadow">
+
 									<!-- Logros -->
 									<div class="">
-	
+
 										<!-- Title -->
 										<div class="font-light hidden">
 											<h5>Logros</h5>
 										</div>
-	
+
 										<!-- Text -->
 										<div class="text-sm">
-											<p>A traves de <span class="font-semibold">Servicios Auxiliares Alma S.L.</span>
-												realice las tareas en <span class="font-bold">Estadio Wanda
-													Metropolitano</span> de auxiliar de serviios atendiendo a los clientes
-												para facilitarles la información necesaria para acceder a los palcos.</p>
+											<p>Through <span class="font-semibold">Servicios Auxiliares Alma S.L.</span>
+												performs tasks in the <span class="font-bold">Wanda Metropolitano
+													Stadium</span> as a service assistant attending to customers to
+												provide them with the necessary information to access the boxes.</p>
 										</div>
-	
+
 									</div>
-	
+
 									<!-- tecnologies -->
 									<div class="">
-	
+
 										<!-- Title -->
 										<div class="font-light text-gray-500">
-											<h5>Aptitudes</h5>
+											<h5>Skills</h5>
 										</div>
-	
+
 										<!-- Text -->
-										<div class="text-sm text-white leading-loose gap-10">
-											<span class="px-3 py-1 bg-green-700 rounded-full">Atención al cliente</span>
+										<div class="flex flex-row flex-wrap justify-start text-xs text-white leading-loose gap-1">
+											<span class="text-center px-3 bg-green-700 rounded-full">Customer service</span>
 										</div>
-	
+
 									</div>
 
 								</div>
 							</figcaption>
 						</figure>
-	
+
 						<!-- Line bar -->
 						<div class="flex flex-col justify-start items-center pt-14" style="width:10%;">
-							<div class="block w-10 h-10 bg-blue-900 rounded-full shadow-lg z-10">
+							<div class="block w-10 h-10 bg-indigo-900 rounded-full shadow-lg z-10">
 							</div>
-	
-							<div class="absolute block bg-blue-900 top-0 bottom-0 left-1/2 transform -translate-x-1/2"
+
+							<div class="absolute block bg-indigo-900 top-0 bottom-0 left-1/2 transform -translate-x-1/2"
 								style="width: 2px;">
 							</div>
 						</div>
-	
+
 						<!-- Date -->
-						<div class="px-1 md:px-4 pt-14 text-right" style="width:45%;">
+						<div class="px-1 md:px-4 pt-14 text-right" style="width:45%;" data-aos="fade-right" data-aos-delay='500' data-aos-offset='300'>
 							<div class="text-sm font-mono">
 								<p>sep 2019 – abr 2020</p>
 							</div>
 						</div>
-	
+
 					</div>
-	
+
 					<!-- Dot to finish -->
 					<div class="flex justify-center items-center">
 						<div class="block w-6 h-6 bg-white rounded-full shadow-lg z-10">
 						</div>
 					</div>
-	
+
 				</div>
-	
+
 			</div>
 		</section>
 
-		<!-- TODO: Mejorar formulario -->
+		<!-- TODO: Mejorar alertas formulario -->
 		<!-- Contact Me -->
-		<section id="contact-me" class="flex flex-col justify-center items-center py-10 w-full shadow-inner" style="background: #f7fcff;">
+		<section id="contact-me" class="flex flex-col justify-center items-center py-10 w-full shadow-inner"
+			style="background: #f7fcff;">
 			<div class="w-full">
-	
+
 				<!-- Title -->
 				<div class="w-full py-4 flex justify-center items-center text-2xl font-bold text-gray-900">
 					<h3>Let's connect!</h3>
 				</div>
-	
+
 				<!-- Contact boxes -->
 				<div class="relative w-lg flex justify-center items-center flex-wrap">
 
 					<!-- Call me! -->
-					<div class="relative w-80 h-80 m-3 bg-white shadow overflow-hidden cursor-pointer" role='info-box'>
-	
+					<div class="relative w-80 h-80 m-3 bg-white shadow overflow-hidden cursor-pointer rounded" role='info-box' data-aos="fade-up" data-aos-delay='500' data-aos-offset='300'>
+
 						<!-- ICON -->
 						<div class="absolute top-0 left-0 w-full h-full flex justify-center items-center transition-all duration-500 transform"
 							role='logo-content'>
 							<i class="fas fa-phone-alt text-3xl"></i>
 						</div>
-	
+
 						<!-- INFO -->
 						<div class="relative top-0 left-0 w-full h-full transition-all duration-1000 bg-green-500 transform scale-1 text-center"
 							role="info-content">
-							<a href="tel:+34605995969" class="w-full h-full p-10 flex flex-col justify-center items-center">
+							<a href="tel:+34605995969"
+								class="w-full h-full p-10 flex flex-col justify-center items-center">
 								<i class="fas fa-phone-alt text-2xl filter invert"></i>
-	
+
 								<div class="mt-4 text-white">
 									<h5 class="uppercase text-lg tracking-wide font-bold">Phone No.</h5>
 									<p class="text-md font-light">+34 605 995 969</p>
@@ -1435,22 +1532,23 @@
 						</div>
 
 					</div>
-	
+
 					<!-- Message me! -->
-					<div class="relative w-80 h-80 m-3 bg-white shadow overflow-hidden cursor-pointer" role='info-box'>
-	
+					<div class="relative w-80 h-80 m-3 bg-white shadow overflow-hidden cursor-pointer rounded" role='info-box' data-aos="fade-up" data-aos-delay='800' data-aos-offset='300'>
+
 						<!-- ICON -->
 						<div class="absolute top-0 left-0 w-full h-full flex justify-center items-center transition-all duration-500 transform"
 							role='logo-content'>
 							<i class="far fa-envelope text-3xl"></i>
 						</div>
-	
+
 						<!-- INFO -->
 						<div class="relative top-0 left-0 w-full h-full transition-all duration-1000 bg-gray-700 transform scale-1 text-center"
 							role="info-content">
-							<a href="mailto:danielcastilloguindos@gmail.com" class="w-full h-full p-10 flex justify-center items-center flex-col ">
+							<a href="mailto:danielcastilloguindos@gmail.com"
+								class="w-full h-full p-10 flex justify-center items-center flex-col ">
 								<i class="far fa-envelope text-2xl filter invert"></i>
-	
+
 								<div class="mt-4 text-white">
 									<h5 class="uppercase text-lg tracking-wide font-bold">Email</h5>
 									<p class="text-md font-light">danielcastilloguindos@gmail.com</p>
@@ -1459,21 +1557,21 @@
 						</div>
 
 					</div>
-	
+
 					<!-- Address! -->
-					<div class="relative w-80 h-80 m-3 bg-white shadow overflow-hidden cursor-pointer" role='info-box'>
-	
+					<div class="relative w-80 h-80 m-3 bg-white shadow overflow-hidden cursor-pointer rounded" role='info-box' data-aos="fade-up" data-aos-delay='1300' data-aos-offset='300'>
+
 						<!-- ICON -->
 						<div class="absolute top-0 left-0 w-full h-full flex justify-center items-center transition-all duration-500 transform"
 							role='logo-content'>
 							<i class="fas fa-map-marker-alt text-3xl"></i>
 						</div>
-	
+
 						<!-- INFO -->
 						<div class="relative top-0 left-0 w-full h-full p-10 flex justify-center items-center flex-col transition-all duration-1000 bg-pink-500 transform scale-1 text-center"
 							role="info-content">
 							<i class="fas fa-map-marker-alt text-2xl filter invert"></i>
-	
+
 							<div class="mt-4 text-white">
 								<h5 class="uppercase text-lg tracking-wide font-bold">Address</h5>
 								<p class="text-md font-light">Madrid, Spain</p>
@@ -1482,64 +1580,80 @@
 					</div>
 
 				</div>
-	
+
 				<!-- Contact form -->
-				<div id="contactContent" class="fixed bottom-0 right-0 mr-10 mb-10 transition-all duration-500 ease-linear">
+				<div id="contactContent"
+					class="fixed bottom-0 right-0 mr-16 mb-16 transition-all duration-500 ease-linear">
 
 					<!-- Cancel button -->
-					<button id="contactButton" class="absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2 flex justify-center items-center w-12 h-12 bg-gray-100 bg-image-contact bg-center bg-no-repeat shadow cursor-pointer z-30 transition-opacity duration-100 ease-linear" style="border-radius: 65% 35% 58% 42% / 53% 71% 29% 47%;"></button>
-		
+					<button id="contactButton"
+						class="absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2 flex justify-center items-center w-16 h-16 bg-gray-100 bg-image-contact bg-center bg-no-repeat border border-gray-200 shadow cursor-pointer z-30 transition-opacity duration-100 ease-linear"
+						style="border-radius: 65% 35% 58% 42% / 53% 71% 29% 47%;"></button>
+
 					<!-- Form content -->
-					<form id="contactForm" class="hidden w-full py-5 px-4 flex flex-col gap-5 bg-white bg-opacity-90 text-gray-500 border border-gray-200 rounded-md shadow-2xl opacity-0 -z-1 transition-all">
-		
+					<form id="contactForm"
+						class="hidden w-full py-5 px-4 flex flex-col gap-5 bg-white bg-opacity-60 text-gray-500 border border-gray-200 rounded-md shadow-2xl opacity-0 -z-1 transition-all" style="backdrop-filter: blur(16px);">
+
 						<!-- Title -->
 						<div class="text-lg text-gray-900 font-semibold">
 							<h5>Let's connect!</h5>
 						</div>
-		
+
 						<!-- Name input -->
 						<div class="relative">
-							<input type="text" id="name" placeholder=" " class="relative w-full py-1 px-4 outline-none text-indigo-900 placeholder-indigo-400">
-							<label for="name" class="absolute top-0 left-0 transition-all duration-300 cursor-text">Hey, what's your name?</label>
+							<input type="text" id="name" placeholder=" "
+								class="relative w-full py-1 px-4 outline-none text-indigo-900 placeholder-indigo-400">
+							<label for="name" class="absolute top-0 left-0 transition-all duration-300 cursor-text">Hey,
+								what's your name?</label>
 						</div>
-						
+
 						<!-- Email input -->
 						<div class="relative">
-							<input type="email" id="mail" placeholder=" " class="relative w-full py-1 px-4 outline-none text-indigo-900 placeholder-indigo-400">
-							<label for="mail" class="absolute top-0 left-0 transition-all duration-300 cursor-text">What is your email?</label>
+							<input type="email" id="mail" placeholder=" "
+								class="relative w-full py-1 px-4 outline-none text-indigo-900 placeholder-indigo-400">
+							<label for="mail" class="absolute top-0 left-0 transition-all duration-300 cursor-text">What
+								is your email?</label>
 						</div>
-						
+
 						<!-- Company input -->
 						<div class="relative">
-							<input type="text" id="company" placeholder=" " class="relative w-full py-1 px-4 outline-none text-indigo-900 placeholder-indigo-400">
-							<label for="company" class="absolute top-0 left-0 transition-all duration-300 cursor-text">Your company is ...</label>
+							<input type="text" id="company" placeholder=" "
+								class="relative w-full py-1 px-4 outline-none text-indigo-900 placeholder-indigo-400">
+							<label for="company"
+								class="absolute top-0 left-0 transition-all duration-300 cursor-text">Your company is
+								...</label>
 						</div>
-		
+
 						<!-- Comment input -->
 						<div class="relative">
-							<textarea id="comment" placeholder=" " class="relative w-full py-1 px-4 outline-none text-indigo-900 placeholder-indigo-400 resize-none"></textarea>
-							<label for="comment" class="absolute top-0 left-0 transition-all duration-300 cursor-text">Write to me, I'll be glad to read you!</label>
+							<textarea id="comment" placeholder=" "
+								class="relative w-full h-20 py-1 px-4 outline-none text-indigo-900 placeholder-indigo-400 resize-none"></textarea>
+							<label for="comment"
+								class="absolute top-0 left-0 transition-all duration-300 cursor-text">Write to me, I'll
+								be glad to read you!</label>
 						</div>
-		
+
 						<!-- File input -->
 						<!-- TODO: For the moment, this section is disabled by clients. -->
 						<div class="relative hidden">
-							<label for="file" class="px-6 py-2 bg-gray-100 cursor-pointer" data-value-init='Adjunta un archivo'>Adjunta un archivo</label>
+							<label for="file" class="px-6 py-2 bg-gray-100 cursor-pointer"
+								data-value-init='Adjunta un archivo'>Adjunta un archivo</label>
 							<input type="file" id="file" class="hidden">
 						</div>
-		
+
 						<!-- Button submit -->
 						<div class="relative flex justify-center">
-							<button type="submit" class="px-6 py-2 flex justify-center items-center bg-gray-700 text-white cursor-pointer rounded-sm transition-all duration-500 hover:bg-gray-900">Connect</button>
+							<button type="submit"
+								class="px-6 py-2 flex justify-center items-center bg-gray-700 text-white cursor-pointer rounded-sm transition-all duration-500 hover:bg-gray-900">Connect</button>
 						</div>
-		
+
 					</form>
-		
+
 				</div>
-	
+
 			</div>
 		</section>
-	
+
 	</main>
 
 
@@ -1547,66 +1661,79 @@
 
 		<!-- All links -->
 		<div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-start justify-left">
-	
+
 			<!-- Special links -->
 			<div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-	
+
 				<!-- Title -->
 				<div class="text-xs uppercase text-gray-400 font-medium mb-6">
 					<h4>Special links</h4>
 				</div>
-	
+
 				<!-- Links -->
 				<nav class="grid grid-flow-row gap-y-0 ">
 					<!-- About me! -->
-					<a href="#about-me" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">About me</a>
+					<a href="#about-me"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">About
+						me</a>
 					<!-- Skills -->
-					<a href="#skills" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Skills</a>
+					<a href="#skills"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Skills</a>
 					<!-- Portfolio -->
-					<a href="#portfolio" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Portfolio</a>
+					<a href="#portfolio"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Portfolio</a>
 					<!-- Work -->
-					<a href="#my-work" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Experiences</a>
+					<a href="#my-work"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Experiences</a>
 					<!-- Contact me -->
-					<a href="#contact-me" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Contact me</a>
+					<a href="#contact-me"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Contact
+						me</a>
 				</nav>
 			</div>
-	
+
 			<!-- Social media -->
 			<div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-	
+
 				<!-- Title -->
 				<div class="text-xs uppercase text-gray-400 font-medium mb-6">
 					<h4>Social Media</h4>
 				</div>
-	
+
 				<!-- Links -->
 				<nav class="grid grid-flow-row gap-y-0 ">
 					<!-- Twitter -->
-					<a href="https://twitter.com/DannyCastle96" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Twitter</a>
+					<a href="https://twitter.com/DannyCastle96"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Twitter</a>
 					<!-- Instagram -->
-					<a href="https://www.instagram.com/DannyCastle96/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Instagram</a>
+					<a href="https://www.instagram.com/DannyCastle96/"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Instagram</a>
 					<!-- LinkedIn -->
-					<a href="https://es.linkedin.com/in/dcastilloguindos" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">LinkedIn</a>
+					<a href="https://es.linkedin.com/in/dcastilloguindos"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">LinkedIn</a>
 					<!-- Gmail -->
-					<a href="mailto:danielcastilloguindos@gmail.com" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Gmail</a>
+					<a href="mailto:danielcastilloguindos@gmail.com"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">Gmail</a>
 					<!-- GitHub -->
-					<a href="https://github.com/DanielCastilloGuindos" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">GitHub</a>
+					<a href="https://github.com/DanielCastilloGuindos"
+						class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">GitHub</a>
 				</nav>
 			</div>
-	
+
 			<!-- Themes -->
 			<div class="p-5 w-1/2 sm:w-4/12 md:w-3/12 hidden">
-	
+
 				<!-- Title -->
 				<div class="text-xs uppercase text-gray-400 font-medium mb-6">
 					<h4>Themes</h4>
 				</div>
-	
+
 				<!-- Options -->
 				<form class="flex flex-row justify-start gap-x-1">
 
 					<!-- Light theme -->
-					<label class="flex items-center justify-around w-20 h-10 bg-white border border-gray-100 rounded-md px-2 py-3 cursor-pointer">
+					<label
+						class="flex items-center justify-around w-20 h-10 bg-white border border-gray-100 rounded-md px-2 py-3 cursor-pointer">
 
 						<input type="radio" name="theme" checked>
 
@@ -1621,7 +1748,8 @@
 					</label>
 
 					<!-- Dark theme -->
-					<label class="flex items-center justify-around w-20 h-10 bg-gray-900 border border-gray-100 rounded-md px-2 py-3 cursor-pointer">
+					<label
+						class="flex items-center justify-around w-20 h-10 bg-gray-900 border border-gray-100 rounded-md px-2 py-3 cursor-pointer">
 
 						<input type="radio" name="theme">
 
@@ -1638,13 +1766,14 @@
 				</form>
 
 			</div>
-	
+
 		</div>
-	
+
 		<!-- Copyright Bar & Social media -->
 		<div class="pt-2">
-			<div class="flex pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-gray-400 text-sm flex-col md:flex-row justify-center items-start max-w-6xl">
-	
+			<div
+				class="flex pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-gray-400 text-sm flex-col md:flex-row justify-start items-start max-w-6xl">
+
 				<!-- Copyright -->
 				<div class="mt-2">
 					<p>&copy;
@@ -1654,7 +1783,7 @@
 
 			</div>
 		</div>
-	
+
 	</footer>
 
 
@@ -1664,10 +1793,10 @@
 		let btn = $('#hamburger');
 		let nav = $('#menu');
 
-		
+
 		$(document).on('ready', handleHamburger);
 
-		function handleHamburger () {
+		function handleHamburger() {
 			$('#hamburger').on('click', handleClickHamburger);
 		}
 
@@ -1679,15 +1808,14 @@
 			$('#hamburger').on('blur', handleOutFocusHamburger);
 		}
 
-		function handleOutFocusHamburger () {
+		function handleOutFocusHamburger() {
 			setTimeout(() => {
-					btn.removeClass('open');
-					nav.removeClass('flex')
-						.addClass('hidden');
-					
-					$('#hamburger').off('blur');
-				}
-				, 100);
+				btn.removeClass('open');
+				nav.removeClass('flex')
+					.addClass('hidden');
+
+				$('#hamburger').off('blur');
+			}, 100);
 		}
 	</script>
 
@@ -1722,28 +1850,28 @@
 		}
 	</script>
 
-    <!-- Firebase cdn -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+	<!-- Firebase cdn -->
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
 
-    <!-- Init firebase -->
-    <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyCK_AXU0Xq2k_MS627WJdsxvPUdbvJjgOI",
-            authDomain: "portfolio-dcg.firebaseapp.com",
-            projectId: "portfolio-dcg",
-            storageBucket: "portfolio-dcg.appspot.com",
-            messagingSenderId: "324545656555",
-            appId: "1:324545656555:web:a851522d3c6cd00cfcf0ae",
-            measurementId: "G-ZGNPVVTN2D"
-        };
+	<!-- Init firebase -->
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyCK_AXU0Xq2k_MS627WJdsxvPUdbvJjgOI",
+			authDomain: "portfolio-dcg.firebaseapp.com",
+			projectId: "portfolio-dcg",
+			storageBucket: "portfolio-dcg.appspot.com",
+			messagingSenderId: "324545656555",
+			appId: "1:324545656555:web:a851522d3c6cd00cfcf0ae",
+			measurementId: "G-ZGNPVVTN2D"
+		};
 
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
 
-        const fs = firebase.firestore();
-    </script>
+		const fs = firebase.firestore();
+	</script>
 
 	<!-- Handle button contact form -->
 	<script>
@@ -1753,55 +1881,56 @@
 
 		$(window).on('load', handleContact);
 
-		function handleContact () {
+		function handleContact() {
 			contactButton.on('click', toggleContactShow);
 		}
 
-		function toggleContactShow () {
+		function toggleContactShow() {
+			contactContent.toggleClass(' z-50');
 			contactButton.toggleClass('bg-image-close bottom-full');
-			contactForm.toggleClass('hidden duration-500 delay-100 opacity-100 -z-1');
+			contactForm.toggleClass('hidden duration-500 delay-100 opacity-100 -z-1 ');
 		}
 	</script>
 
-    <!-- Handle submit contact form -->
-    <script>
-        // let contactForm = $('form#contactForm');
-        let inputName = $('input#name');
-        let inputMail = $('input#mail');
-        let inputCompany = $('input#company');
-        let inputComment = $('textarea#comment');
-        let inputFile = $('input#file');
+	<!-- Handle submit contact form -->
+	<script>
+		// let contactForm = $('form#contactForm');
+		let inputName = $('input#name');
+		let inputMail = $('input#mail');
+		let inputCompany = $('input#company');
+		let inputComment = $('textarea#comment');
+		let inputFile = $('input#file');
 
-        class CommentController {
-            constructor (data) {
-                this.data = data;
-            }
+		class CommentController {
+			constructor(data) {
+				this.data = data;
+			}
 
-            save () {
-                fs.collection('comments')
-                    .doc()
-                    .set(this.data)
-                    .then(() => alert('ok'))
-                    .catch(err => alert(err));
-            }
-        }
+			save() {
+				fs.collection('comments')
+					.doc()
+					.set(this.data)
+					.then(() => alert('ok'))
+					.catch(err => alert(err));
+			}
+		}
 
-        contactForm.on('submit', handleContactForm);
+		contactForm.on('submit', handleContactForm);
 
-        function handleContactForm (e) {
-            e.preventDefault();
+		function handleContactForm(e) {
+			e.preventDefault();
 
-            let dataComment = {
-                name: inputName.val(),
-                mai: inputMail.val(),
-                company: inputCompany.val(),
-                comment: inputComment.val()
-            };
+			let dataComment = {
+				name: inputName.val(),
+				mai: inputMail.val(),
+				company: inputCompany.val(),
+				comment: inputComment.val()
+			};
 
-            let comment = new CommentController(dataComment);
-            comment.save();
-        }
-    </script>
+			let comment = new CommentController(dataComment);
+			comment.save();
+		}
+	</script>
 
 	<!-- InputFile script -->
 	<script>
@@ -1821,7 +1950,7 @@
 
 		$(document).on('ready', checkCopyrightYear);
 
-		function checkCopyrightYear () {
+		function checkCopyrightYear() {
 			let currentYear = (new Date()).getFullYear().toString();
 			let writeYear = copyrightYear.html();
 			let isEqualsValue = currentYear == writeYear;
@@ -1831,9 +1960,23 @@
 		}
 	</script>
 
+	<!-- AOS JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Init AOS  -->
+	<script>
+		AOS.init({
+			startEvent: 'DOMContentLoaded',
+			useClassNames: true,
+
+			once: true, 
+		});
+	</script>
+
 	<!-- Only if you have a prehistoric browser -->
 	<noscript>
 	</noscript>
 
 </body>
+
 </html>
