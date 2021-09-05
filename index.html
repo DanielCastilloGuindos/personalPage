@@ -259,7 +259,7 @@
 
 		<!-- Navbar top with Logo, hamburger button & other options -->
 		<div id="navbarMenu"
-			class="fixed top-0 left-0 w-full flex justify-center bg-white shadow-none md:shadow-lg transition duration-500 delay-200 opacity-0 z-50">
+			class="fixed top-0 left-0 w-full flex justify-center bg-white shadow-none md:shadow-lg transition duration-500 delay-200 opacity-0 z-50 overflow-hidden">
 			<div
 				class="w-full md:max-w-4xl flex flex-col md:flex-row justify-around md:justify-between items-center py-1 ">
 
@@ -390,7 +390,7 @@
 		<!-- About me -->
 		<section id="about-me"
 			class="flex flex-col justify-center items-center w-full p-0 md:p-16 md:pt-0 bg-gray-800 text-gray-100">
-			<div class="w-full md:max-w-4xl">
+			<div class="w-full md:max-w-4xl overflow-hidden">
 
 				<!-- Title -->
 				<div
@@ -548,7 +548,7 @@
 				</div>
 
 				<!-- Skills content -->
-				<div class="flex flex-col items-center md:grid md:grid-flow-col md:grid-cols-2 gap-5 px-3 py-5">
+				<div class="flex flex-col items-center md:grid md:grid-flow-col md:grid-cols-2 gap-5 px-3 py-5 overflow-hidden">
 
 					<!-- My best skills... Yeah... It's not enought... I know it. -->
 					<div class="max-w-md flex flex-col gap-5 md:max-w-full my-auto" data-aos="fade-right" data-aos-delay='500' data-aos-offset="300">
@@ -1130,12 +1130,15 @@
 			<div class="w-full md:w-11/12">
 
 				<!-- Title -->
-				<div class="w-full py-4 flex justify-center items-center text-2xl font-bold text-gray-900">
+				<div class="w-full py-4 flex flex-col gap-10 justify-center items-center text-2xl font-bold text-gray-900">
 					<h3>Portfolio</h3>
+					
+					<h4 class="max-w-screen-lg text-lg sm:text-2xl sm:leading-10 font-medium mb-10 sm:mb-11 text-gray-600">Hover over the browser to see more information.</h4>
 				</div>
 
+
 				<!-- Browsers -->
-				<div class="grid sm:grid-cols-2 gap-2 pt-5 pb-3">
+				<div class="grid sm:grid-cols-2 gap-2 pt-5 pb-3 overflow-hidden">
 
 					<!-- Light browser -->
 					<figure class="relative grid w-full bg-white border border-gray-200 shadow-lg rounded" data-aos="flip-up" data-aos-delay='500' data-aos-offset="300">
@@ -1145,12 +1148,20 @@
 							<div class="block w-3 h-3 rounded-full bg-green-300"></div>
 						</blockquote>
 
-						<figcaption class="w-full">
+						<figcaption class="relative w-full">
 
-							<a href="https://bancoeconos.org/" target="_blank" rel="noopener noreferrer"
-								class="w-full h-full">
-								<img src="./src/public/media/img/bancoEconos.jpeg" alt='Banco econos'
-									class="object-cover">
+							<a href="https://bancoeconos.org/" target="_blank" rel="noopener noreferrer" class="relative block min-w-full min-h-full">
+
+								<!-- Image -->
+								<img src="./src/public/media/gifs/bancoEconos.gif" alt='Banco econos' class="object-cover">
+
+								<!-- Text -->
+								<div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-11/12 h-40 bg-red-300 bg-opacity-50 py-2 px-4 rounded shadow-inner flex flex-col justify-center items-center " style="backdrop-filter: blur(20px);">
+
+									<!-- Description -->
+									<p class="text-justify">El <b>Proyecto Econos: finanzas para mayores</b> es un proyecto desarrollado para <b>Economistas sin Fronteras</b> que tiene el objetivo de mejorar la calidad de vida de nuestros mayores en su relación con el ámbito financiero.</p>
+
+								</div>
 							</a>
 
 						</figcaption>
@@ -1185,7 +1196,7 @@
 				</div>
 
 				<!-- Work Time Line -->
-				<div class="flex flex-col py-5 px-0 md:px-8">
+				<div class="flex flex-col py-5 px-0 md:px-8 overflow-hidden">
 
 					<!-- I-SEC -->
 					<div class="relative flex flex-row justify-start">
@@ -1494,7 +1505,6 @@
 			</div>
 		</section>
 
-		<!-- TODO: Mejorar alertas formulario -->
 		<!-- Contact Me -->
 		<section id="contact-me" class="flex flex-col justify-center items-center py-10 w-full shadow-inner"
 			style="background: #f7fcff;">
@@ -1506,7 +1516,7 @@
 				</div>
 
 				<!-- Contact boxes -->
-				<div class="relative w-lg flex justify-center items-center flex-wrap">
+				<div class="relative w-lg flex justify-center items-center flex-wrap overflow-hidden">
 
 					<!-- Call me! -->
 					<div class="relative w-80 h-80 m-3 bg-white shadow overflow-hidden cursor-pointer rounded" role='info-box' data-aos="fade-up" data-aos-delay='500' data-aos-offset='300'>
@@ -1645,6 +1655,52 @@
 						<div class="relative flex justify-center">
 							<button type="submit"
 								class="px-6 py-2 flex justify-center items-center bg-gray-700 text-white cursor-pointer rounded-sm transition-all duration-500 hover:bg-gray-900">Connect</button>
+						</div>
+
+						
+
+						<div id="notify" class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-full my-5 py-1 px-4  bg-transparent bg-opacity-90 flex flex-row gap-5 justify-start items-center text-white opacity-0 cursor-pointer transition-all duration-500 -z-1" style="backdrop-filter: blur(10px);">
+							
+							<!-- Icon -->
+							<div class="">
+
+								<!-- Success icon -->
+								<svg id="successIcon" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<ellipse style="fill:#32BEA6;" cx="256" cy="256" rx="256" ry="255.832"/>
+									<polygon style="fill:#FFFFFF;" points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504   391.88,166.392 "/>
+								</svg>
+
+								<!-- Error Icon -->
+								<svg id='errorIcon' xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" enable-background="new 0 0 512 512" viewBox="0 0 512 512" >
+									<g>
+										<path d="m507.606 145.568-141.174-141.174c-2.813-2.813-6.628-4.394-10.606-4.394h-199.652c-3.978 0-7.793 1.581-10.606 4.394l-141.174 141.174c-2.813 2.813-4.394 6.628-4.394 10.606v199.651c0 3.978 1.581 7.793 4.394 10.606l141.174 141.174c2.813 2.813 6.628 4.394 10.606 4.394h199.651c3.978 0 7.793-1.581 10.606-4.394l141.174-141.174c2.813-2.813 4.394-6.628 4.394-10.606v-199.651c.001-3.978-1.58-7.793-4.393-10.606z" fill="#f25a3c"/>
+										<path d="m512 156.17v199.66c0 3.97-1.58 7.79-4.39 10.6l-141.18 141.18c-2.81 2.81-6.63 4.39-10.6 4.39h-99.83v-512h99.83c3.97 0 7.79 1.58 10.6 4.39l141.18 141.18c2.81 2.81 4.39 6.63 4.39 10.6z" fill="#f25a3c"/>
+										<path d="m237.171 106h37.658c8.728 0 15.613 7.422 14.958 16.126l-12.793 170c-.589 7.826-7.11 13.874-14.958 13.874h-12.073c-7.848 0-14.369-6.049-14.958-13.874l-12.792-170c-.654-8.704 6.23-16.126 14.958-16.126z" fill="#e9f3fb"/>
+										<path d="m289.79 122.13-12.8 170c-.58 7.82-7.11 13.87-14.95 13.87h-6.04v-200h18.83c8.73 0 15.61 7.42 14.96 16.13z" fill="#d6e9f8"/>
+										<path d="m226.05 375.95v.1c0 16.541 13.409 29.95 29.95 29.95 16.541 0 29.95-13.409 29.95-29.95v-.1c0-16.541-13.409-29.95-29.95-29.95-16.541 0-29.95 13.409-29.95 29.95z" fill="#e9f3fb"/>
+										<path d="m285.95 375.95v.1c0 8.27-3.35 15.76-8.77 21.18s-12.91 8.77-21.18 8.77v-60c16.54 0 29.95 13.41 29.95 29.95z" fill="#d6e9f8"/>
+									</g>
+								</svg>
+
+							</div>
+
+							<!-- Text -->
+							<div class="flex flex-col flex-wrap justify-start">
+
+								<!-- Success Message -->
+								<div id="successMessage" class="hidden">
+									<p>Awesome!</p>
+									<p>Soon you will have answers from me.</p>
+								</div>
+								
+								<!-- Error message -->
+								<div id="errorMessage" class="hidden">
+									<p>A wild error appears.</p>
+									<p>Spoky!</p>
+								</div>
+
+							</div>
+
 						</div>
 
 					</form>
@@ -1895,11 +1951,16 @@
 	<!-- Handle submit contact form -->
 	<script>
 		// let contactForm = $('form#contactForm');
+		let notify = $('#notify');
 		let inputName = $('input#name');
 		let inputMail = $('input#mail');
 		let inputCompany = $('input#company');
 		let inputComment = $('textarea#comment');
 		let inputFile = $('input#file');
+		let successIcon = $('#successIcon');
+		let errorIcon = $('#errorIcon');
+		let successMessage = $('#successMessage');
+		let errorMessage = $('#errorMessage');
 
 		class CommentController {
 			constructor(data) {
@@ -1910,8 +1971,36 @@
 				fs.collection('comments')
 					.doc()
 					.set(this.data)
-					.then(() => alert('ok'))
-					.catch(err => alert(err));
+					.then(() => {
+						notify.addClass('bg-green-600 opacity-100 z-50').removeClass('-z-1');
+						successIcon.removeClass('hidden');
+						successMessage.removeClass('hidden');
+
+						let notifyInterval;
+						notifyInterval = setInterval(function () {
+							notify.removeClass('bg-green-600 opacity-100 z-50').addClass('-z-1');
+							successIcon.addClass('hidden');
+							successMessage.addClass('hidden');
+
+							clearInterval(notifyInterval);
+						}, 5000);
+					})
+					.catch(() => {
+						notify.addClass('bg-red-600 opacity-100 z-50').removeClass('-z-1');
+						errorIcon.removeClass('hidden');
+						errorMessage.removeClass('hidden');
+						errorMessage.html('<p>A wild error appears.</p><p>Spoky!</p>');
+
+						let notifyInterval;
+						notifyInterval = setInterval(function () {
+							notify.removeClass('bg-red-600 opacity-100 z-50').addClass('-z-1');
+							errorIcon.addClass('hidden');
+							errorMessage.addClass('hidden');
+
+							clearInterval(notifyInterval);
+						}, 5000);
+					})
+					.finally();
 			}
 		}
 
@@ -1922,13 +2011,30 @@
 
 			let dataComment = {
 				name: inputName.val(),
-				mai: inputMail.val(),
+				mail: inputMail.val(),
 				company: inputCompany.val(),
 				comment: inputComment.val()
 			};
 
-			let comment = new CommentController(dataComment);
-			comment.save();
+			if (dataComment.name == '' || dataComment.mail == '' || dataComment.company == '' || dataComment.comment == '') {
+				notify.addClass('bg-red-600 opacity-100 z-50').removeClass('-z-1');
+				errorIcon.removeClass('hidden');
+				errorMessage.removeClass('hidden');
+				
+				errorMessage.html('<p>None of the fields can be empty.</p>');
+
+				let notifyInterval;
+				notifyInterval = setInterval(function () {
+					notify.removeClass('bg-red-600 opacity-100 z-50').addClass('-z-1');
+					errorIcon.addClass('hidden');
+					errorMessage.addClass('hidden');
+
+					clearInterval(notifyInterval);
+				}, 5000);
+			} else {
+				let comment = new CommentController(dataComment);
+				comment.save();
+			}
 		}
 	</script>
 
@@ -1971,6 +2077,11 @@
 
 			once: true, 
 		});
+	</script>
+
+
+	<!-- Notify class -->
+	<script>
 	</script>
 
 	<!-- Only if you have a prehistoric browser -->
